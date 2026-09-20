@@ -5,8 +5,8 @@ import re
 
 # =========================================================
 # IPTV GRADO - SAFE AUTO UPDATE
-# Versione 2.7
-# 15 MEDIASET DASH + EPG COMPLETO
+# Versione 2.8
+# 15 MEDIASET DASH + EPG ESTESO
 # Hisense VIDAA / SS IPTV
 # =========================================================
 
@@ -30,7 +30,7 @@ EPG_URL = (
 # MEDIASET DASH
 #
 # Tutti verificati funzionanti su
-# Hisense VIDAA / SS IPTV - 20/09/2026
+# Hisense VIDAA / SS IPTV
 # =========================================================
 
 MEDIASET_DASH = {
@@ -149,6 +149,24 @@ EPG_IDS = {
     "Sky TG24": "Sky.TG24.it",
     "R101 TV": "R101tv.it",
     "Deejay TV": "Deejay.TV.it",
+
+    # NUOVI EPG v2.8
+    "La7": "LA7.HD.it",
+    "TV8": "TV8.HD.it",
+    "Giallo": "Giallo.TV.it",
+    "Gambero Rosso": "Gambero.Rosso.HD.it",
+    "Euronews Italian": "Euronews.it",
+    "SuperTennis": "SuperTennis.HD.it",
+    "Sportitalia SOLOCALCIO": "Solocalcio.it.it",
+    "BIKE Channel": "BIKE.it",
+    "RTL 102.5": "RTL.102.5.HD.it",
+    "Radio 105 TV": "Radio.105.it",
+    "RadioItaliaTV": "Radio.Italia.TV.HD.it",
+    "Rai Radio 2 Visual Radio": "RaiRadio2.it",
+    "RadioFreccia": "RADIOFRECCIA.HD.it",
+    "Radio Montecarlo TV": "RMC.it",
+    "Virgin Radio TV": "Virgin.Radio.it",
+    "Radio Norba Tv": "RADIONORBA.TV.it",
 }
 
 
@@ -281,7 +299,7 @@ def download():
     request = urllib.request.Request(
         SOURCE,
         headers={
-            "User-Agent": "IPTV-Grado/2.7"
+            "User-Agent": "IPTV-Grado/2.8"
         },
     )
 
@@ -444,8 +462,8 @@ def add_epg_id(
 
 print("")
 print("======================================")
-print("IPTV GRADO v2.7")
-print("15 MEDIASET DASH + EPG")
+print("IPTV GRADO v2.8")
+print("15 MEDIASET DASH + EPG ESTESO")
 print("======================================")
 print("")
 
@@ -517,7 +535,7 @@ output = [
 
     (
         "#PLAYLIST:IPTV Grado - "
-        "Stable v2.7 + 15 Mediaset DASH + EPG"
+        "Stable v2.8 + 15 Mediaset DASH + EPG esteso"
     ),
 
     (
@@ -723,11 +741,11 @@ print(
 )
 
 print(
-    "EPG Grado integrato."
+    "EPG Grado integrato ed esteso."
 )
 
 print(
-    "Versione stabile 2.7."
+    "Versione stabile 2.8."
 )
 
 print("======================================")
