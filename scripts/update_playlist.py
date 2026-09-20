@@ -5,29 +5,32 @@ import re
 
 # =========================================================
 # IPTV GRADO - SAFE AUTO UPDATE
-# Versione 2.6 - MEDIASET DASH + EPG
+# Versione 2.7
+# 15 MEDIASET DASH + EPG COMPLETO
 # Hisense VIDAA / SS IPTV
 # =========================================================
-
 
 SOURCE = (
     "https://raw.githubusercontent.com/"
     "Free-TV/IPTV/master/playlists/playlist_italy.m3u8"
 )
 
-OUTPUT = Path("IPTV_Grado_Full_v1.0.m3u")
+OUTPUT = Path(
+    "IPTV_Grado_Full_v1.0.m3u"
+)
 
 EPG_URL = (
     "https://raw.githubusercontent.com/"
-    "andboch70-sudo/IPTV-Grado/refs/heads/main/EPG_Grado.xml"
+    "andboch70-sudo/IPTV-Grado/"
+    "refs/heads/main/EPG_Grado.xml"
 )
 
 
 # =========================================================
-# STREAM MEDIASET DASH
+# MEDIASET DASH
 #
-# Verificati funzionanti su Hisense VIDAA / SS IPTV
-# 20/09/2026
+# Tutti verificati funzionanti su
+# Hisense VIDAA / SS IPTV - 20/09/2026
 # =========================================================
 
 MEDIASET_DASH = {
@@ -75,11 +78,82 @@ MEDIASET_DASH = {
     "Boing":
         "https://live03-col.msf.cdn.mediaset.net/"
         "live/ch-kb/kb-clr.isml/manifest.mpd",
+
+    "Italia 2":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-i2/i2-clr.isml/manifest.mpd",
+
+    "Mediaset Extra":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-kq/kq-clr.isml/manifest.mpd",
+
+    "TGCOM24":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-kf/kf-clr.isml/manifest.mpd",
+
+    "Cartoonito":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-la/la-clr.isml/manifest.mpd",
 }
 
 
 # =========================================================
-# DOMINI DA NON PRENDERE DALLA PLAYLIST SORGENTE
+# EPG IDs
+# =========================================================
+
+EPG_IDS = {
+
+    # RAI
+    "Rai 1": "Rai1.it",
+    "Rai 2": "Rai2.it",
+    "Rai 3": "Rai3.it",
+    "Rai 4": "Rai4.it",
+    "Rai 5": "Rai5.it",
+    "Rai Movie": "RaiMovie.it",
+    "Rai Premium": "RaiPremium.it",
+    "Rai Gulp": "RaiGulp.it",
+    "Rai YoYo": "RaiYoyo.it",
+    "Rai News 24": "RaiNews24.it",
+    "Rai Storia": "RaiStoria.it",
+    "Rai Scuola": "RaiScuola.it",
+    "Rai Sport": "RaiSport.it",
+
+    # MEDIASET
+    "Rete 4": "Rete.4.it",
+    "Canale 5": "Canale.5.it",
+    "Italia 1": "Italia.1.it",
+    "20 Mediaset": "20.it",
+    "Iris": "Iris.it",
+    "TwentySeven": "27.Twentyseven.it",
+    "La5": "La.5.it",
+    "Cine34": "Cine34.it",
+    "Focus": "Focus.it",
+    "Top Crime": "Top.Crime.it",
+    "Boing": "Boing.it",
+    "Italia 2": "Italia.2.it",
+    "Mediaset Extra": "Mediaset.Extra.it",
+    "TGCOM24": "TGCom.it",
+    "Cartoonito": "Cartoonito.it",
+
+    # ALTRI
+    "Nove": "Nove.it",
+    "Cielo": "cielo.it",
+    "Real Time": "Real.Time.it",
+    "Food Network": "Food.Network.it",
+    "Discovery Channel": "Discovery.Channel.it",
+    "DMAX": "DMAX.it",
+    "HGTV": "HGTV.it",
+    "K2": "K2.it",
+    "Frisbee": "Frisbee.it",
+    "Super!": "Super!.it",
+    "Sky TG24": "Sky.TG24.it",
+    "R101 TV": "R101tv.it",
+    "Deejay TV": "Deejay.TV.it",
+}
+
+
+# =========================================================
+# BLOCCO VECCHI STREAM MEDIASET
 # =========================================================
 
 BLOCKED = (
@@ -95,12 +169,11 @@ BLOCKED = (
 
 WANTED = [
 
-    # RAI
     "Rai 1",
     "Rai 2",
     "Rai 3",
 
-    # MEDIASET DASH
+    # MEDIASET
     "Rete 4",
     "Canale 5",
     "Italia 1",
@@ -112,19 +185,20 @@ WANTED = [
     "Focus",
     "Top Crime",
     "Boing",
+    "Italia 2",
+    "Mediaset Extra",
+    "TGCOM24",
+    "Cartoonito",
 
-    # GENERALISTI
     "La7",
     "TV8",
     "Nove",
 
-    # RAI TEMATICI
     "Rai 4",
     "Rai 5",
     "Rai Movie",
     "Rai Premium",
 
-    # INTRATTENIMENTO
     "Cielo",
     "TV 2000",
     "Real Time",
@@ -140,7 +214,6 @@ WANTED = [
     "Turbo",
     "Travel TV",
 
-    # BAMBINI
     "K2",
     "Rai Gulp",
     "Rai YoYo",
@@ -148,7 +221,6 @@ WANTED = [
     "Super!",
     "BeJoy.Kids",
 
-    # NEWS / CULTURA
     "Rai News 24",
     "Sky TG24",
     "Rai Storia",
@@ -158,14 +230,12 @@ WANTED = [
     "Camera dei Deputati",
     "Euronews Italian",
 
-    # SPORT
     "Rai Sport",
     "Sportitalia Plus",
     "SuperTennis",
     "Sportitalia SOLOCALCIO",
     "BIKE Channel",
 
-    # RADIO TV
     "Radio TV Serie A con RDS",
     "RTL 102.5",
     "Radio 105 TV",
@@ -184,77 +254,12 @@ WANTED = [
     "Radio m2o Tv",
     "Radio Norba Tv",
 
-    # FRIULI VENEZIA GIULIA
     "Tele Quattro Trieste",
     "Tele Friuli",
     "Tele Pordenone",
     "Ran Friul",
     "Videotelecarnia",
 ]
-
-
-# =========================================================
-# EPG IDs VERIFICATI
-# =========================================================
-
-EPG_IDS = {
-
-    # RAI
-    "Rai 1": "Rai1.it",
-    "Rai 2": "Rai2.it",
-    "Rai 3": "Rai3.it",
-
-    # MEDIASET
-    "Rete 4": "Rete.4.it",
-    "Canale 5": "Canale.5.it",
-    "Italia 1": "Italia.1.it",
-
-    # 20 Mediaset:
-    # EPG ID ancora da identificare
-
-    "Iris": "Iris.it",
-
-    # TwentySeven:
-    # EPG ID ancora da identificare
-
-    "La5": "La.5.it",
-    "Cine34": "Cine34.it",
-    "Focus": "Focus.it",
-    "Top Crime": "Top.Crime.it",
-    "Boing": "Boing.it",
-
-    # ALTRI
-    "Nove": "Nove.it",
-
-    "Rai 4": "Rai4.it",
-    "Rai 5": "Rai5.it",
-    "Rai Movie": "RaiMovie.it",
-    "Rai Premium": "RaiPremium.it",
-
-    "Cielo": "cielo.it",
-
-    "Real Time": "Real.Time.it",
-    "Food Network": "Food.Network.it",
-    "Discovery Channel": "Discovery.Channel.it",
-    "DMAX": "DMAX.it",
-    "HGTV": "HGTV.it",
-
-    "K2": "K2.it",
-    "Rai Gulp": "RaiGulp.it",
-    "Rai YoYo": "RaiYoyo.it",
-    "Frisbee": "Frisbee.it",
-    "Super!": "Super!.it",
-
-    "Rai News 24": "RaiNews24.it",
-    "Sky TG24": "Sky.TG24.it",
-    "Rai Storia": "RaiStoria.it",
-    "Rai Scuola": "RaiScuola.it",
-
-    "Rai Sport": "RaiSport.it",
-
-    "R101 TV": "R101tv.it",
-    "Deejay TV": "Deejay.TV.it",
-}
 
 
 # =========================================================
@@ -276,7 +281,7 @@ def download():
     request = urllib.request.Request(
         SOURCE,
         headers={
-            "User-Agent": "IPTV-Grado/2.6"
+            "User-Agent": "IPTV-Grado/2.7"
         },
     )
 
@@ -317,7 +322,6 @@ def parse(text):
         i += 1
 
         extras = []
-
         url = None
 
         while i < len(lines):
@@ -360,7 +364,8 @@ def stream_score(url):
 
     score = 0
 
-    # Rai Mediapolis ha priorità assoluta
+    # Fondamentale:
+    # preserviamo Rai Mediapolis
     if "mediapolis.rai.it/relinker" in lower:
         score += 100
 
@@ -391,7 +396,10 @@ def build_info(name):
     )
 
 
-def add_epg_id(info, requested_name):
+def add_epg_id(
+    info,
+    requested_name,
+):
 
     epg_id = EPG_IDS.get(
         requested_name
@@ -431,13 +439,13 @@ def add_epg_id(info, requested_name):
 
 
 # =========================================================
-# DOWNLOAD PLAYLIST SORGENTE
+# DOWNLOAD SORGENTE
 # =========================================================
 
 print("")
 print("======================================")
-print("IPTV GRADO v2.6")
-print("MEDIASET DASH + EPG")
+print("IPTV GRADO v2.7")
+print("15 MEDIASET DASH + EPG")
 print("======================================")
 print("")
 
@@ -455,15 +463,10 @@ print(
 )
 
 
-# =========================================================
-# PREPARAZIONE CANDIDATI
-# =========================================================
-
 wanted = {
     clean_name(channel): channel
     for channel in WANTED
 }
-
 
 candidates = {}
 
@@ -502,7 +505,7 @@ for name, info, extras, url in source_channels:
 
 
 # =========================================================
-# HEADER PLAYLIST
+# HEADER
 # =========================================================
 
 output = [
@@ -512,23 +515,27 @@ output = [
         f'x-tvg-url="{EPG_URL}"'
     ),
 
-    "#PLAYLIST:IPTV Grado - Stable v2.6 + Mediaset DASH + EPG",
+    (
+        "#PLAYLIST:IPTV Grado - "
+        "Stable v2.7 + 15 Mediaset DASH + EPG"
+    ),
 
-    "#NOTA:Ottimizzata per Hisense VIDAA / SS IPTV",
+    (
+        "#NOTA:Ottimizzata per "
+        "Hisense VIDAA / SS IPTV"
+    ),
 ]
 
 
 added = set()
 
 count = 0
-
 epg_count = 0
-
 mediaset_count = 0
 
 
 # =========================================================
-# CREAZIONE PLAYLIST
+# GENERAZIONE
 # =========================================================
 
 for requested_name in WANTED:
@@ -538,11 +545,9 @@ for requested_name in WANTED:
     )
 
 
-    # -----------------------------------------------------
-    # MEDIASET
-    # Usiamo SEMPRE i DASH verificati sulla TV.
-    # Non dipendiamo dalla playlist Free-TV.
-    # -----------------------------------------------------
+    # MEDIASET:
+    # sempre DASH verificati direttamente
+    # sulla Hisense.
 
     if requested_name in MEDIASET_DASH:
 
@@ -561,36 +566,19 @@ for requested_name in WANTED:
 
         count += 1
         mediaset_count += 1
-
-        if requested_name in EPG_IDS:
-
-            epg_count += 1
-
-            print(
-                "EPG ASSOCIATO MEDIASET:",
-                requested_name,
-                EPG_IDS[requested_name],
-            )
-
-        else:
-
-            print(
-                "MEDIASET SENZA EPG:",
-                requested_name,
-            )
+        epg_count += 1
 
         print(
-            "MEDIASET DASH:",
+            "MEDIASET DASH + EPG:",
             requested_name,
+            EPG_IDS[requested_name],
             url,
         )
 
         continue
 
 
-    # -----------------------------------------------------
-    # TUTTI GLI ALTRI CANALI
-    # -----------------------------------------------------
+    # ALTRI CANALI
 
     available = candidates.get(
         normalized,
@@ -620,9 +608,7 @@ for requested_name in WANTED:
     added.add(normalized)
 
 
-    # -----------------------------------------------------
-    # TELEQUATTRO = CANALE 10
-    # -----------------------------------------------------
+    # TELEQUATTRO = 10
 
     if normalized == clean_name(
         "Tele Quattro Trieste"
@@ -634,9 +620,7 @@ for requested_name in WANTED:
         )
 
 
-    # -----------------------------------------------------
     # EPG
-    # -----------------------------------------------------
 
     info = add_epg_id(
         info,
@@ -655,9 +639,7 @@ for requested_name in WANTED:
 
 
     output.append(info)
-
     output.extend(extras)
-
     output.append(url)
 
     count += 1
@@ -670,10 +652,10 @@ for requested_name in WANTED:
 
 
 # =========================================================
-# CONTROLLO DI SICUREZZA
+# CONTROLLI DI SICUREZZA
 # =========================================================
 
-if count < 45:
+if count < 49:
 
     raise RuntimeError(
         f"Trovati soltanto {count} canali. "
@@ -682,16 +664,16 @@ if count < 45:
     )
 
 
-if mediaset_count != len(MEDIASET_DASH):
+if mediaset_count != 15:
 
     raise RuntimeError(
-        "Non tutti i canali Mediaset DASH "
-        "sono stati inseriti."
+        "Errore: non sono stati inseriti "
+        "tutti i 15 Mediaset DASH."
     )
 
 
 # =========================================================
-# SCRITTURA PLAYLIST
+# SCRITTURA
 # =========================================================
 
 OUTPUT.write_text(
@@ -719,7 +701,12 @@ print(
 )
 
 print(
-    "Canali associati EPG:",
+    "Mediaset con EPG:",
+    15,
+)
+
+print(
+    "Canali complessivi associati EPG:",
     epg_count,
 )
 
@@ -740,7 +727,7 @@ print(
 )
 
 print(
-    "Versione stabile 2.6."
+    "Versione stabile 2.7."
 )
 
 print("======================================")
