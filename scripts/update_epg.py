@@ -6,7 +6,7 @@ import gzip
 
 # =========================================================
 # IPTV GRADO - EPG AUTO UPDATE
-# Versione 1.3 - MEDIASET COMPLETO
+# Versione 1.4 - EPG ESTESO
 # =========================================================
 
 SOURCE = (
@@ -55,7 +55,7 @@ WANTED_IDS = {
     "TGCom.it",
     "Cartoonito.it",
 
-    # ALTRI
+    # ALTRI - GIA PRESENTI
     "cielo.it",
     "Sky.TG24.it",
     "Deejay.TV.it",
@@ -69,13 +69,31 @@ WANTED_IDS = {
     "K2.it",
     "Frisbee.it",
     "Super!.it",
+
+    # NUOVI EPG - v1.4
+    "LA7.HD.it",
+    "TV8.HD.it",
+    "Giallo.TV.it",
+    "Gambero.Rosso.HD.it",
+    "Euronews.it",
+    "SuperTennis.HD.it",
+    "Solocalcio.it.it",
+    "BIKE.it",
+    "RTL.102.5.HD.it",
+    "Radio.105.it",
+    "Radio.Italia.TV.HD.it",
+    "RaiRadio2.it",
+    "RADIOFRECCIA.HD.it",
+    "RMC.it",
+    "Virgin.Radio.it",
+    "RADIONORBA.TV.it",
 }
 
 
 print("")
 print("======================================")
-print("IPTV GRADO - EPG v1.3")
-print("MEDIASET COMPLETO")
+print("IPTV GRADO - EPG v1.4")
+print("EPG ESTESO")
 print("======================================")
 print("")
 
@@ -84,7 +102,7 @@ print("Scaricamento EPG Italia...")
 request = urllib.request.Request(
     SOURCE,
     headers={
-        "User-Agent": "IPTV-Grado-EPG/1.3"
+        "User-Agent": "IPTV-Grado-EPG/1.4"
     },
 )
 
@@ -162,6 +180,53 @@ print(
 
 
 # =========================================================
+# CONTROLLI DI SICUREZZA
+#
+# Eseguiti PRIMA di sovrascrivere EPG_Grado.xml.
+# =========================================================
+
+if len(selected_ids) < 50:
+
+    raise RuntimeError(
+        "Troppi pochi canali EPG trovati. "
+        "Aggiornamento annullato."
+    )
+
+
+mediaset_ids = {
+    "Rete.4.it",
+    "Canale.5.it",
+    "Italia.1.it",
+    "20.it",
+    "Iris.it",
+    "27.Twentyseven.it",
+    "La.5.it",
+    "Cine34.it",
+    "Focus.it",
+    "Top.Crime.it",
+    "Boing.it",
+    "Italia.2.it",
+    "Mediaset.Extra.it",
+    "TGCom.it",
+    "Cartoonito.it",
+}
+
+missing_mediaset = (
+    mediaset_ids
+    - selected_ids
+)
+
+if missing_mediaset:
+
+    raise RuntimeError(
+        "Mancano uno o più EPG Mediaset: "
+        + ", ".join(
+            sorted(missing_mediaset)
+        )
+    )
+
+
+# =========================================================
 # CREAZIONE EPG RIDOTTO
 # =========================================================
 
@@ -207,6 +272,10 @@ size_mb = (
 )
 
 
+# =========================================================
+# RISULTATO
+# =========================================================
+
 print("")
 print("======================================")
 print("EPG GRADO GENERATO")
@@ -232,50 +301,9 @@ print(
     "Mediaset EPG previsti: 15"
 )
 
-print("======================================")
-print("")
-
-
-# =========================================================
-# CONTROLLI DI SICUREZZA
-# =========================================================
-
-if len(selected_ids) < 40:
-
-    raise RuntimeError(
-        "Troppi pochi canali EPG trovati. "
-        "Aggiornamento annullato."
-    )
-
-
-mediaset_ids = {
-    "Rete.4.it",
-    "Canale.5.it",
-    "Italia.1.it",
-    "20.it",
-    "Iris.it",
-    "27.Twentyseven.it",
-    "La.5.it",
-    "Cine34.it",
-    "Focus.it",
-    "Top.Crime.it",
-    "Boing.it",
-    "Italia.2.it",
-    "Mediaset.Extra.it",
-    "TGCom.it",
-    "Cartoonito.it",
-}
-
-missing_mediaset = (
-    mediaset_ids
-    - selected_ids
+print(
+    "Nuovi ID EPG v1.4 previsti: 16"
 )
 
-if missing_mediaset:
-
-    raise RuntimeError(
-        "Mancano uno o più EPG Mediaset: "
-        + ", ".join(
-            sorted(missing_mediaset)
-        )
-    )
+print("======================================")
+print("")
