@@ -1,11 +1,14 @@
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
+import gzip
+
 
 # =========================================================
 # IPTV GRADO - EPG AUTO UPDATE
-# Versione 1.0
+# Versione 1.1 - MEDIASET
 # =========================================================
+
 
 SOURCE = (
     "https://epgshare01.online/epgshare01/"
@@ -14,19 +17,43 @@ SOURCE = (
 
 OUTPUT = Path("EPG_Grado.xml")
 
-# Canali per i quali vogliamo conservare la guida.
-# Il confronto viene fatto anche sul nome visualizzato.
+
+# =========================================================
+# CANALI DA INSERIRE NELL'EPG GRADO
+# =========================================================
+
 WANTED = [
+
+    # RAI
     "Rai 1",
     "Rai 2",
     "Rai 3",
+
+    # MEDIASET
+    "Rete 4",
+    "Canale 5",
+    "Italia 1",
+    "20 Mediaset",
+    "Iris",
+    "TwentySeven",
+    "La5",
+    "Cine34",
+    "Focus",
+    "Top Crime",
+    "Boing",
+
+    # GENERALISTI
     "La7",
     "TV8",
     "Nove",
+
+    # RAI TEMATICI
     "Rai 4",
     "Rai 5",
     "Rai Movie",
     "Rai Premium",
+
+    # INTRATTENIMENTO
     "Cielo",
     "TV2000",
     "Real Time",
@@ -35,17 +62,25 @@ WANTED = [
     "Giallo",
     "DMAX",
     "HGTV",
+
+    # BAMBINI
     "K2",
     "Rai Gulp",
     "Rai YoYo",
     "Frisbee",
     "Super!",
+
+    # NEWS / CULTURA
     "Rai News 24",
     "Sky TG24",
     "Rai Storia",
     "Rai Scuola",
+
+    # SPORT
     "Rai Sport",
     "SuperTennis",
+
+    # RADIO TV
     "RTL 102.5",
     "Radio 105 TV",
     "R101 TV",
@@ -55,7 +90,12 @@ WANTED = [
 ]
 
 
+# =========================================================
+# NORMALIZZAZIONE NOMI
+# =========================================================
+
 def normalize(text):
+
     return (
         text.lower()
         .replace(" ", "")
@@ -65,33 +105,51 @@ def normalize(text):
     )
 
 
+# =========================================================
+# DOWNLOAD EPG
+# =========================================================
+
+print("")
+print("======================================")
+print("IPTV GRADO - AGGIORNAMENTO EPG")
+print("======================================")
+print("")
+
 print("Scaricamento EPG Italia...")
+
 
 request = urllib.request.Request(
     SOURCE,
     headers={
-        "User-Agent": "IPTV-Grado-EPG/1.0"
+        "User-Agent": "IPTV-Grado-EPG/1.1"
     },
 )
+
 
 with urllib.request.urlopen(
     request,
     timeout=90,
 ) as response:
+
     compressed = response.read()
 
 
-# La sorgente è XML compresso gzip.
-import gzip
-
 xml_data = gzip.decompress(compressed)
+
 
 print(
     "EPG scaricato:",
-    round(len(xml_data) / 1024 / 1024, 2),
+    round(
+        len(xml_data) / 1024 / 1024,
+        2
+    ),
     "MB"
 )
 
+
+# =========================================================
+# LETTURA XML
+# =========================================================
 
 root = ET.fromstring(xml_data)
 
@@ -106,16 +164,26 @@ selected_ids = set()
 
 
 # =========================================================
-# IDENTIFICA I CANALI DESIDERATI
+# RICERCA CANALI
 # =========================================================
+
+print("")
+print("Ricerca canali EPG...")
+print("")
+
 
 for channel in root.findall("channel"):
 
-    channel_id = channel.get("id", "")
+    channel_id = channel.get(
+        "id",
+        ""
+    )
 
     names = [
         x.text or ""
-        for x in channel.findall("display-name")
+        for x in channel.findall(
+            "display-name"
+        )
     ]
 
     matches = False
@@ -125,19 +193,25 @@ for channel in root.findall("channel"):
         n = normalize(name)
 
         if n in wanted_normalized:
+
             matches = True
             break
 
     if matches:
-        selected_ids.add(channel_id)
+
+        selected_ids.add(
+            channel_id
+        )
 
         print(
             "EPG TROVATO:",
             channel_id,
+            "->",
             names[0] if names else "",
         )
 
 
+print("")
 print(
     "Canali EPG selezionati:",
     len(selected_ids)
@@ -145,31 +219,55 @@ print(
 
 
 # =========================================================
-# CREA XMLTV ALLEGGERITO
+# CREAZIONE EPG RIDOTTO
 # =========================================================
 
 new_root = ET.Element("tv")
 
-# Copia i canali
+
+# CANALI
+
 for channel in root.findall("channel"):
 
-    if channel.get("id") in selected_ids:
-        new_root.append(channel)
+    if (
+        channel.get("id")
+        in selected_ids
+    ):
 
+        new_root.append(
+            channel
+        )
+
+
+# PROGRAMMI
 
 programme_count = 0
 
-# Copia soltanto i programmi dei canali selezionati
-for programme in root.findall("programme"):
 
-    if programme.get("channel") in selected_ids:
+for programme in root.findall(
+    "programme"
+):
 
-        new_root.append(programme)
+    if (
+        programme.get("channel")
+        in selected_ids
+    ):
+
+        new_root.append(
+            programme
+        )
 
         programme_count += 1
 
 
-tree = ET.ElementTree(new_root)
+# =========================================================
+# SCRITTURA FILE
+# =========================================================
+
+tree = ET.ElementTree(
+    new_root
+)
+
 
 ET.indent(
     tree,
@@ -184,21 +282,48 @@ tree.write(
 )
 
 
-size_mb = OUTPUT.stat().st_size / 1024 / 1024
+size_mb = (
+    OUTPUT.stat().st_size
+    / 1024
+    / 1024
+)
 
+
+# =========================================================
+# RISULTATO
+# =========================================================
 
 print("")
 print("======================================")
 print("EPG GRADO GENERATO")
-print("Canali:", len(selected_ids))
-print("Programmi:", programme_count)
-print("Dimensione:", round(size_mb, 2), "MB")
 print("======================================")
 
+print(
+    "Canali:",
+    len(selected_ids)
+)
 
-# Controllo di sicurezza:
-# non sostituiamo il nostro EPG con un file vuoto.
+print(
+    "Programmi:",
+    programme_count
+)
+
+print(
+    "Dimensione:",
+    round(size_mb, 2),
+    "MB"
+)
+
+print("======================================")
+print("")
+
+
+# =========================================================
+# CONTROLLO SICUREZZA
+# =========================================================
+
 if len(selected_ids) < 10:
+
     raise RuntimeError(
         "Troppi pochi canali EPG trovati. "
         "Aggiornamento annullato."
