@@ -1,10 +1,34 @@
 #EXTM3U
 
-#EXTINF:-1,TEST DASH - Rete 4
+#EXTINF:-1,01 - Rete 4
 https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest.mpd
 
-#EXTINF:-1,TEST DASH - Canale 5
+#EXTINF:-1,02 - Canale 5
 https://live03-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest.mpd
 
-#EXTINF:-1,TEST DASH - Italia 1
+#EXTINF:-1,03 - Italia 1
 https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest.mpd
+
+#EXTINF:-1,04 - 20 Mediaset
+https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest.mpd
+
+#EXTINF:-1,05 - Iris
+https://live03-col.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/manifest.mpd
+
+#EXTINF:-1,06 - TwentySeven
+https://live03-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/manifest.mpd
+
+#EXTINF:-1,07 - La5
+https://live03-col.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/manifest.mpd
+
+#EXTINF:-1,08 - Cine34
+https://live03-col.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/manifest.mpd
+
+#EXTINF:-1,09 - Focus
+https://live03-col.msf.cdn.mediaset.net/live/ch-fu/fu-clr.isml/manifest.mpd
+
+#EXTINF:-1,10 - Top Crime
+https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest.mpd
+
+#EXTINF:-1,11 - Boing
+https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest.mpd
