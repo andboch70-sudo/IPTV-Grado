@@ -6,9 +6,8 @@ import gzip
 
 # =========================================================
 # IPTV GRADO - EPG AUTO UPDATE
-# Versione 1.1 - MEDIASET
+# Versione 1.2 - MEDIASET COMPLETO
 # =========================================================
-
 
 SOURCE = (
     "https://epgshare01.online/epgshare01/"
@@ -19,99 +18,65 @@ OUTPUT = Path("EPG_Grado.xml")
 
 
 # =========================================================
-# CANALI DA INSERIRE NELL'EPG GRADO
+# ID EPG VERIFICATI
 # =========================================================
 
-WANTED = [
+WANTED_IDS = {
 
     # RAI
-    "Rai 1",
-    "Rai 2",
-    "Rai 3",
+    "Rai1.it",
+    "Rai2.it",
+    "Rai3.it",
+    "Rai4.it",
+    "Rai5.it",
+    "RaiMovie.it",
+    "RaiPremium.it",
+    "RaiGulp.it",
+    "RaiYoyo.it",
+    "RaiStoria.it",
+    "RaiScuola.it",
+    "RaiNews24.it",
+    "RaiSport.it",
 
     # MEDIASET
-    "Rete 4",
-    "Canale 5",
-    "Italia 1",
-    "20 Mediaset",
-    "Iris",
-    "TwentySeven",
-    "La5",
-    "Cine34",
-    "Focus",
-    "Top Crime",
-    "Boing",
+    "Rete.4.it",
+    "Canale.5.it",
+    "Italia.1.it",
+    "20.it",
+    "Iris.it",
+    "27.Twentyseven.it",
+    "La.5.it",
+    "Cine34.it",
+    "Focus.it",
+    "Top.Crime.it",
+    "Boing.it",
+    "Italia.2.it",
+    "Cartoonito.it",
 
-    # GENERALISTI
-    "La7",
-    "TV8",
-    "Nove",
-
-    # RAI TEMATICI
-    "Rai 4",
-    "Rai 5",
-    "Rai Movie",
-    "Rai Premium",
-
-    # INTRATTENIMENTO
-    "Cielo",
-    "TV2000",
-    "Real Time",
-    "Food Network",
-    "Discovery Channel",
-    "Giallo",
-    "DMAX",
-    "HGTV",
-
-    # BAMBINI
-    "K2",
-    "Rai Gulp",
-    "Rai YoYo",
-    "Frisbee",
-    "Super!",
-
-    # NEWS / CULTURA
-    "Rai News 24",
-    "Sky TG24",
-    "Rai Storia",
-    "Rai Scuola",
-
-    # SPORT
-    "Rai Sport",
-    "SuperTennis",
-
-    # RADIO TV
-    "RTL 102.5",
-    "Radio 105 TV",
-    "R101 TV",
-    "Deejay TV",
-    "RadioItaliaTV",
-    "Radio Kiss Kiss TV",
-]
+    # ALTRI
+    "cielo.it",
+    "Sky.TG24.it",
+    "Deejay.TV.it",
+    "R101tv.it",
+    "Nove.it",
+    "DMAX.it",
+    "Real.Time.it",
+    "HGTV.it",
+    "Food.Network.it",
+    "Discovery.Channel.it",
+    "K2.it",
+    "Frisbee.it",
+    "Super!.it",
+}
 
 
 # =========================================================
-# NORMALIZZAZIONE NOMI
-# =========================================================
-
-def normalize(text):
-
-    return (
-        text.lower()
-        .replace(" ", "")
-        .replace("-", "")
-        .replace("_", "")
-        .replace(".", "")
-    )
-
-
-# =========================================================
-# DOWNLOAD EPG
+# DOWNLOAD
 # =========================================================
 
 print("")
 print("======================================")
-print("IPTV GRADO - AGGIORNAMENTO EPG")
+print("IPTV GRADO - EPG v1.2")
 print("======================================")
 print("")
 
@@ -121,7 +86,7 @@ print("Scaricamento EPG Italia...")
 request = urllib.request.Request(
     SOURCE,
     headers={
-        "User-Agent": "IPTV-Grado-EPG/1.1"
+        "User-Agent": "IPTV-Grado-EPG/1.2"
     },
 )
 
@@ -153,18 +118,11 @@ print(
 
 root = ET.fromstring(xml_data)
 
-
-wanted_normalized = {
-    normalize(name)
-    for name in WANTED
-}
-
-
 selected_ids = set()
 
 
 # =========================================================
-# RICERCA CANALI
+# SELEZIONE PER ID ESATTO
 # =========================================================
 
 print("")
@@ -186,18 +144,7 @@ for channel in root.findall("channel"):
         )
     ]
 
-    matches = False
-
-    for name in names:
-
-        n = normalize(name)
-
-        if n in wanted_normalized:
-
-            matches = True
-            break
-
-    if matches:
+    if channel_id in WANTED_IDS:
 
         selected_ids.add(
             channel_id
@@ -208,6 +155,70 @@ for channel in root.findall("channel"):
             channel_id,
             "->",
             names[0] if names else "",
+        )
+
+
+# =========================================================
+# DIAGNOSTICA MEDIASET EXTRA / TGCOM24
+# =========================================================
+
+print("")
+print("---- RICERCA EXTRA MEDIASET ----")
+
+
+for channel in root.findall("channel"):
+
+    channel_id = channel.get(
+        "id",
+        ""
+    )
+
+    names = [
+        x.text or ""
+        for x in channel.findall(
+            "display-name"
+        )
+    ]
+
+    searchable = (
+        channel_id
+        + " "
+        + " ".join(names)
+    ).lower()
+
+    if (
+        "mediaset" in searchable
+        or "tgcom" in searchable
+    ):
+
+        print(
+            "CANDIDATO MEDIASET:",
+            channel_id,
+            "->",
+            names[0] if names else "",
+        )
+
+
+# =========================================================
+# CONTROLLO ID MANCANTI
+# =========================================================
+
+missing = (
+    WANTED_IDS
+    - selected_ids
+)
+
+
+if missing:
+
+    print("")
+    print("ID EPG NON TROVATI:")
+
+    for channel_id in sorted(missing):
+
+        print(
+            "NON TROVATO:",
+            channel_id
         )
 
 
@@ -225,8 +236,6 @@ print(
 new_root = ET.Element("tv")
 
 
-# CANALI
-
 for channel in root.findall("channel"):
 
     if (
@@ -238,8 +247,6 @@ for channel in root.findall("channel"):
             channel
         )
 
-
-# PROGRAMMI
 
 programme_count = 0
 
@@ -319,10 +326,10 @@ print("")
 
 
 # =========================================================
-# CONTROLLO SICUREZZA
+# SICUREZZA
 # =========================================================
 
-if len(selected_ids) < 10:
+if len(selected_ids) < 30:
 
     raise RuntimeError(
         "Troppi pochi canali EPG trovati. "
