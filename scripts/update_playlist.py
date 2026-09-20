@@ -1,5 +1,14 @@
 import urllib.request
 from pathlib import Path
+import re
+
+
+# =========================================================
+# IPTV GRADO - SAFE AUTO UPDATE
+# Versione 2.6 - MEDIASET DASH + EPG
+# Hisense VIDAA / SS IPTV
+# =========================================================
+
 
 SOURCE = (
     "https://raw.githubusercontent.com/"
@@ -15,11 +24,63 @@ EPG_URL = (
 
 
 # =========================================================
-# IPTV GRADO - SAFE AUTO UPDATE
-# Versione 2.5 - EPG INTEGRATO
-# Hisense VIDAA / SS IPTV
+# STREAM MEDIASET DASH
+#
+# Verificati funzionanti su Hisense VIDAA / SS IPTV
+# 20/09/2026
 # =========================================================
 
+MEDIASET_DASH = {
+
+    "Rete 4":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-r4/r4-clr.isml/manifest.mpd",
+
+    "Canale 5":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-c5/c5-clr.isml/manifest.mpd",
+
+    "Italia 1":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-i1/i1-clr.isml/manifest.mpd",
+
+    "20 Mediaset":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-lb/lb-clr.isml/manifest.mpd",
+
+    "Iris":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-ki/ki-clr.isml/manifest.mpd",
+
+    "TwentySeven":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-ts/ts-clr.isml/manifest.mpd",
+
+    "La5":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-ka/ka-clr.isml/manifest.mpd",
+
+    "Cine34":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-b6/b6-clr.isml/manifest.mpd",
+
+    "Focus":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-fu/fu-clr.isml/manifest.mpd",
+
+    "Top Crime":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-lt/lt-clr.isml/manifest.mpd",
+
+    "Boing":
+        "https://live03-col.msf.cdn.mediaset.net/"
+        "live/ch-kb/kb-clr.isml/manifest.mpd",
+}
+
+
+# =========================================================
+# DOMINI DA NON PRENDERE DALLA PLAYLIST SORGENTE
+# =========================================================
 
 BLOCKED = (
     "live02-seg.msf.cdn.mediaset.net",
@@ -28,20 +89,42 @@ BLOCKED = (
 )
 
 
+# =========================================================
+# CANALI
+# =========================================================
+
 WANTED = [
+
+    # RAI
     "Rai 1",
     "Rai 2",
     "Rai 3",
 
+    # MEDIASET DASH
+    "Rete 4",
+    "Canale 5",
+    "Italia 1",
+    "20 Mediaset",
+    "Iris",
+    "TwentySeven",
+    "La5",
+    "Cine34",
+    "Focus",
+    "Top Crime",
+    "Boing",
+
+    # GENERALISTI
     "La7",
     "TV8",
     "Nove",
 
+    # RAI TEMATICI
     "Rai 4",
     "Rai 5",
     "Rai Movie",
     "Rai Premium",
 
+    # INTRATTENIMENTO
     "Cielo",
     "TV 2000",
     "Real Time",
@@ -57,6 +140,7 @@ WANTED = [
     "Turbo",
     "Travel TV",
 
+    # BAMBINI
     "K2",
     "Rai Gulp",
     "Rai YoYo",
@@ -64,6 +148,7 @@ WANTED = [
     "Super!",
     "BeJoy.Kids",
 
+    # NEWS / CULTURA
     "Rai News 24",
     "Sky TG24",
     "Rai Storia",
@@ -73,12 +158,14 @@ WANTED = [
     "Camera dei Deputati",
     "Euronews Italian",
 
+    # SPORT
     "Rai Sport",
     "Sportitalia Plus",
     "SuperTennis",
     "Sportitalia SOLOCALCIO",
     "BIKE Channel",
 
+    # RADIO TV
     "Radio TV Serie A con RDS",
     "RTL 102.5",
     "Radio 105 TV",
@@ -97,6 +184,7 @@ WANTED = [
     "Radio m2o Tv",
     "Radio Norba Tv",
 
+    # FRIULI VENEZIA GIULIA
     "Tele Quattro Trieste",
     "Tele Friuli",
     "Tele Pordenone",
@@ -106,17 +194,36 @@ WANTED = [
 
 
 # =========================================================
-# ASSOCIAZIONE CANALE -> EPG
-#
-# Usiamo esclusivamente ID verificati nel nostro
-# EPG_Grado.xml.
+# EPG IDs VERIFICATI
 # =========================================================
 
 EPG_IDS = {
+
+    # RAI
     "Rai 1": "Rai1.it",
     "Rai 2": "Rai2.it",
     "Rai 3": "Rai3.it",
 
+    # MEDIASET
+    "Rete 4": "Rete.4.it",
+    "Canale 5": "Canale.5.it",
+    "Italia 1": "Italia.1.it",
+
+    # 20 Mediaset:
+    # EPG ID ancora da identificare
+
+    "Iris": "Iris.it",
+
+    # TwentySeven:
+    # EPG ID ancora da identificare
+
+    "La5": "La.5.it",
+    "Cine34": "Cine34.it",
+    "Focus": "Focus.it",
+    "Top Crime": "Top.Crime.it",
+    "Boing": "Boing.it",
+
+    # ALTRI
     "Nove": "Nove.it",
 
     "Rai 4": "Rai4.it",
@@ -150,6 +257,10 @@ EPG_IDS = {
 }
 
 
+# =========================================================
+# FUNZIONI
+# =========================================================
+
 def clean_name(name):
 
     for symbol in "ⒼⓈⓎⓉ":
@@ -165,7 +276,7 @@ def download():
     request = urllib.request.Request(
         SOURCE,
         headers={
-            "User-Agent": "IPTV-Grado/2.5"
+            "User-Agent": "IPTV-Grado/2.6"
         },
     )
 
@@ -221,9 +332,7 @@ def parse(text):
             ):
 
                 url = current
-
                 i += 1
-
                 break
 
             if current:
@@ -251,8 +360,7 @@ def stream_score(url):
 
     score = 0
 
-    # Rai Mediapolis:
-    # verificato direttamente sulla Hisense.
+    # Rai Mediapolis ha priorità assoluta
     if "mediapolis.rai.it/relinker" in lower:
         score += 100
 
@@ -265,6 +373,24 @@ def stream_score(url):
     return score
 
 
+def build_info(name):
+
+    epg_id = EPG_IDS.get(name)
+
+    if epg_id:
+
+        return (
+            '#EXTINF:-1 '
+            f'tvg-id="{epg_id}",'
+            f'{name}'
+        )
+
+    return (
+        "#EXTINF:-1,"
+        + name
+    )
+
+
 def add_epg_id(info, requested_name):
 
     epg_id = EPG_IDS.get(
@@ -274,17 +400,18 @@ def add_epg_id(info, requested_name):
     if not epg_id:
         return info
 
-    # Evita di mantenere un eventuale tvg-id
-    # proveniente dalla playlist sorgente.
-    parts = info.split(",")
+    parts = info.split(
+        ",",
+        1
+    )
 
     attributes = parts[0]
 
-    display_name = ",".join(
-        parts[1:]
+    display_name = (
+        parts[1]
+        if len(parts) > 1
+        else requested_name
     )
-
-    import re
 
     attributes = re.sub(
         r'\s+tvg-id="[^"]*"',
@@ -304,8 +431,15 @@ def add_epg_id(info, requested_name):
 
 
 # =========================================================
-# DOWNLOAD PLAYLIST
+# DOWNLOAD PLAYLIST SORGENTE
 # =========================================================
+
+print("")
+print("======================================")
+print("IPTV GRADO v2.6")
+print("MEDIASET DASH + EPG")
+print("======================================")
+print("")
 
 print(
     "Scaricamento playlist Free-TV..."
@@ -316,20 +450,20 @@ text = download()
 source_channels = parse(text)
 
 print(
-    f"Canali/stream letti dalla sorgente: "
-    f"{len(source_channels)}"
+    "Canali/stream letti dalla sorgente:",
+    len(source_channels)
 )
 
+
+# =========================================================
+# PREPARAZIONE CANDIDATI
+# =========================================================
 
 wanted = {
     clean_name(channel): channel
     for channel in WANTED
 }
 
-
-# =========================================================
-# RACCOLTA STREAM
-# =========================================================
 
 candidates = {}
 
@@ -368,15 +502,18 @@ for name, info, extras, url in source_channels:
 
 
 # =========================================================
-# CREA PLAYLIST
+# HEADER PLAYLIST
 # =========================================================
 
 output = [
+
     (
         '#EXTM3U '
         f'x-tvg-url="{EPG_URL}"'
     ),
-    "#PLAYLIST:IPTV Grado - Stable v2.5 + EPG",
+
+    "#PLAYLIST:IPTV Grado - Stable v2.6 + Mediaset DASH + EPG",
+
     "#NOTA:Ottimizzata per Hisense VIDAA / SS IPTV",
 ]
 
@@ -387,12 +524,73 @@ count = 0
 
 epg_count = 0
 
+mediaset_count = 0
+
+
+# =========================================================
+# CREAZIONE PLAYLIST
+# =========================================================
 
 for requested_name in WANTED:
 
     normalized = clean_name(
         requested_name
     )
+
+
+    # -----------------------------------------------------
+    # MEDIASET
+    # Usiamo SEMPRE i DASH verificati sulla TV.
+    # Non dipendiamo dalla playlist Free-TV.
+    # -----------------------------------------------------
+
+    if requested_name in MEDIASET_DASH:
+
+        url = MEDIASET_DASH[
+            requested_name
+        ]
+
+        info = build_info(
+            requested_name
+        )
+
+        output.append(info)
+        output.append(url)
+
+        added.add(normalized)
+
+        count += 1
+        mediaset_count += 1
+
+        if requested_name in EPG_IDS:
+
+            epg_count += 1
+
+            print(
+                "EPG ASSOCIATO MEDIASET:",
+                requested_name,
+                EPG_IDS[requested_name],
+            )
+
+        else:
+
+            print(
+                "MEDIASET SENZA EPG:",
+                requested_name,
+            )
+
+        print(
+            "MEDIASET DASH:",
+            requested_name,
+            url,
+        )
+
+        continue
+
+
+    # -----------------------------------------------------
+    # TUTTI GLI ALTRI CANALI
+    # -----------------------------------------------------
 
     available = candidates.get(
         normalized,
@@ -422,9 +620,9 @@ for requested_name in WANTED:
     added.add(normalized)
 
 
-    # =====================================================
+    # -----------------------------------------------------
     # TELEQUATTRO = CANALE 10
-    # =====================================================
+    # -----------------------------------------------------
 
     if normalized == clean_name(
         "Tele Quattro Trieste"
@@ -436,9 +634,9 @@ for requested_name in WANTED:
         )
 
 
-    # =====================================================
-    # AGGIUNGE tvg-id QUANDO DISPONIBILE
-    # =====================================================
+    # -----------------------------------------------------
+    # EPG
+    # -----------------------------------------------------
 
     info = add_epg_id(
         info,
@@ -475,7 +673,7 @@ for requested_name in WANTED:
 # CONTROLLO DI SICUREZZA
 # =========================================================
 
-if count < 35:
+if count < 45:
 
     raise RuntimeError(
         f"Trovati soltanto {count} canali. "
@@ -484,8 +682,16 @@ if count < 35:
     )
 
 
+if mediaset_count != len(MEDIASET_DASH):
+
+    raise RuntimeError(
+        "Non tutti i canali Mediaset DASH "
+        "sono stati inseriti."
+    )
+
+
 # =========================================================
-# SALVATAGGIO
+# SCRITTURA PLAYLIST
 # =========================================================
 
 OUTPUT.write_text(
@@ -494,19 +700,27 @@ OUTPUT.write_text(
 )
 
 
+# =========================================================
+# RISULTATO
+# =========================================================
+
 print("")
+print("======================================")
+
 print(
-    "======================================"
+    "IPTV Grado aggiornata:",
+    count,
+    "canali."
 )
 
 print(
-    f"IPTV Grado aggiornata: "
-    f"{count} canali."
+    "Mediaset DASH inseriti:",
+    mediaset_count,
 )
 
 print(
-    f"Canali associati EPG: "
-    f"{epg_count}."
+    "Canali associati EPG:",
+    epg_count,
 )
 
 print(
@@ -514,7 +728,7 @@ print(
 )
 
 print(
-    "Mediaset incompatibili esclusi."
+    "Mediaset: DASH live03-col."
 )
 
 print(
@@ -526,9 +740,7 @@ print(
 )
 
 print(
-    "Versione stabile 2.5."
+    "Versione stabile 2.6."
 )
 
-print(
-    "======================================"
-)
+print("======================================")
