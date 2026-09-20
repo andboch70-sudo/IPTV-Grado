@@ -1,7 +1,10 @@
 #EXTM3U
 
-#EXTINF:-1,TEST 1 - Canale 5 LIVE2 CLR
-https://live2-mediaset-it.akamaized.net/content/hls_h0_clr_vos/live/channel(c5)/index.m3u8
+#EXTINF:-1,TEST DASH - Rete 4
+https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest.mpd
 
-#EXTINF:-1,TEST 2 - Canale 5 LIVE2 CLS
-https://live2-mediaset-it.akamaized.net/content/hls_h0_cls_vos/live/channel(c5)/index.m3u8
+#EXTINF:-1,TEST DASH - Canale 5
+https://live03-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest.mpd
+
+#EXTINF:-1,TEST DASH - Italia 1
+https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest.mpd
