@@ -6,7 +6,7 @@ import gzip
 
 # =========================================================
 # IPTV GRADO - EPG AUTO UPDATE
-# Versione 1.2 - MEDIASET COMPLETO
+# Versione 1.3 - MEDIASET COMPLETO
 # =========================================================
 
 SOURCE = (
@@ -38,7 +38,7 @@ WANTED_IDS = {
     "RaiNews24.it",
     "RaiSport.it",
 
-    # MEDIASET
+    # MEDIASET - 15 CANALI
     "Rete.4.it",
     "Canale.5.it",
     "Italia.1.it",
@@ -51,6 +51,8 @@ WANTED_IDS = {
     "Top.Crime.it",
     "Boing.it",
     "Italia.2.it",
+    "Mediaset.Extra.it",
+    "TGCom.it",
     "Cartoonito.it",
 
     # ALTRI
@@ -70,51 +72,35 @@ WANTED_IDS = {
 }
 
 
-# =========================================================
-# DOWNLOAD
-# =========================================================
-
 print("")
 print("======================================")
-print("IPTV GRADO - EPG v1.2")
+print("IPTV GRADO - EPG v1.3")
+print("MEDIASET COMPLETO")
 print("======================================")
 print("")
 
 print("Scaricamento EPG Italia...")
 
-
 request = urllib.request.Request(
     SOURCE,
     headers={
-        "User-Agent": "IPTV-Grado-EPG/1.2"
+        "User-Agent": "IPTV-Grado-EPG/1.3"
     },
 )
-
 
 with urllib.request.urlopen(
     request,
     timeout=90,
 ) as response:
-
     compressed = response.read()
-
 
 xml_data = gzip.decompress(compressed)
 
-
 print(
     "EPG scaricato:",
-    round(
-        len(xml_data) / 1024 / 1024,
-        2
-    ),
+    round(len(xml_data) / 1024 / 1024, 2),
     "MB"
 )
-
-
-# =========================================================
-# LETTURA XML
-# =========================================================
 
 root = ET.fromstring(xml_data)
 
@@ -122,33 +108,25 @@ selected_ids = set()
 
 
 # =========================================================
-# SELEZIONE PER ID ESATTO
+# SELEZIONE CANALI
 # =========================================================
 
 print("")
 print("Ricerca canali EPG...")
 print("")
 
-
 for channel in root.findall("channel"):
 
-    channel_id = channel.get(
-        "id",
-        ""
-    )
+    channel_id = channel.get("id", "")
 
     names = [
         x.text or ""
-        for x in channel.findall(
-            "display-name"
-        )
+        for x in channel.findall("display-name")
     ]
 
     if channel_id in WANTED_IDS:
 
-        selected_ids.add(
-            channel_id
-        )
+        selected_ids.add(channel_id)
 
         print(
             "EPG TROVATO:",
@@ -159,63 +137,17 @@ for channel in root.findall("channel"):
 
 
 # =========================================================
-# DIAGNOSTICA MEDIASET EXTRA / TGCOM24
-# =========================================================
-
-print("")
-print("---- RICERCA EXTRA MEDIASET ----")
-
-
-for channel in root.findall("channel"):
-
-    channel_id = channel.get(
-        "id",
-        ""
-    )
-
-    names = [
-        x.text or ""
-        for x in channel.findall(
-            "display-name"
-        )
-    ]
-
-    searchable = (
-        channel_id
-        + " "
-        + " ".join(names)
-    ).lower()
-
-    if (
-        "mediaset" in searchable
-        or "tgcom" in searchable
-    ):
-
-        print(
-            "CANDIDATO MEDIASET:",
-            channel_id,
-            "->",
-            names[0] if names else "",
-        )
-
-
-# =========================================================
 # CONTROLLO ID MANCANTI
 # =========================================================
 
-missing = (
-    WANTED_IDS
-    - selected_ids
-)
-
+missing = WANTED_IDS - selected_ids
 
 if missing:
 
     print("")
-    print("ID EPG NON TROVATI:")
+    print("ATTENZIONE - ID EPG NON TROVATI:")
 
     for channel_id in sorted(missing):
-
         print(
             "NON TROVATO:",
             channel_id
@@ -235,52 +167,32 @@ print(
 
 new_root = ET.Element("tv")
 
-
 for channel in root.findall("channel"):
 
-    if (
-        channel.get("id")
-        in selected_ids
-    ):
-
-        new_root.append(
-            channel
-        )
+    if channel.get("id") in selected_ids:
+        new_root.append(channel)
 
 
 programme_count = 0
 
+for programme in root.findall("programme"):
 
-for programme in root.findall(
-    "programme"
-):
+    if programme.get("channel") in selected_ids:
 
-    if (
-        programme.get("channel")
-        in selected_ids
-    ):
-
-        new_root.append(
-            programme
-        )
-
+        new_root.append(programme)
         programme_count += 1
 
 
 # =========================================================
-# SCRITTURA FILE
+# SCRITTURA
 # =========================================================
 
-tree = ET.ElementTree(
-    new_root
-)
-
+tree = ET.ElementTree(new_root)
 
 ET.indent(
     tree,
     space="  ",
 )
-
 
 tree.write(
     OUTPUT,
@@ -288,17 +200,12 @@ tree.write(
     xml_declaration=True,
 )
 
-
 size_mb = (
     OUTPUT.stat().st_size
     / 1024
     / 1024
 )
 
-
-# =========================================================
-# RISULTATO
-# =========================================================
 
 print("")
 print("======================================")
@@ -321,17 +228,54 @@ print(
     "MB"
 )
 
+print(
+    "Mediaset EPG previsti: 15"
+)
+
 print("======================================")
 print("")
 
 
 # =========================================================
-# SICUREZZA
+# CONTROLLI DI SICUREZZA
 # =========================================================
 
-if len(selected_ids) < 30:
+if len(selected_ids) < 40:
 
     raise RuntimeError(
         "Troppi pochi canali EPG trovati. "
         "Aggiornamento annullato."
+    )
+
+
+mediaset_ids = {
+    "Rete.4.it",
+    "Canale.5.it",
+    "Italia.1.it",
+    "20.it",
+    "Iris.it",
+    "27.Twentyseven.it",
+    "La.5.it",
+    "Cine34.it",
+    "Focus.it",
+    "Top.Crime.it",
+    "Boing.it",
+    "Italia.2.it",
+    "Mediaset.Extra.it",
+    "TGCom.it",
+    "Cartoonito.it",
+}
+
+missing_mediaset = (
+    mediaset_ids
+    - selected_ids
+)
+
+if missing_mediaset:
+
+    raise RuntimeError(
+        "Mancano uno o più EPG Mediaset: "
+        + ", ".join(
+            sorted(missing_mediaset)
+        )
     )
