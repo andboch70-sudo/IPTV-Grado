@@ -28,16 +28,20 @@ jobs:
       - name: Aggiorna playlist
         run: python scripts/update_playlist.py
 
-      - name: Pubblica aggiornamento
+      - name: Aggiorna EPG
+        run: python scripts/update_epg.py
+
+      - name: Pubblica aggiornamenti
         shell: bash
         run: |
-          if git diff --quiet -- IPTV_Grado_Full_v1.0.m3u; then
+          if git diff --quiet -- IPTV_Grado_Full_v1.0.m3u EPG_Grado.xml; then
             echo "Nessun aggiornamento necessario."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add IPTV_Grado_Full_v1.0.m3u
-          git commit -m "Aggiornamento automatico IPTV Grado"
+
+          git add IPTV_Grado_Full_v1.0.m3u EPG_Grado.xml
+          git commit -m "Aggiornamento automatico IPTV Grado + EPG"
           git push
