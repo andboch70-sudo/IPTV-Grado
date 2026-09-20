@@ -24,10 +24,22 @@
     <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/topcrime.png" />
     <url>http://www.mediasetplay.mediaset.it</url>
   </channel>
+  <channel id="TGCom.it">
+    <display-name lang="it">TGCom</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/tgcom.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
   <channel id="Rete.4.it">
     <display-name lang="it">Rete 4</display-name>
     <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" />
     <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/r4.png" />
+    <url>http://www.mediasetplay.mediaset.it</url>
+  </channel>
+  <channel id="Mediaset.Extra.it">
+    <display-name lang="it">Mediaset Extra</display-name>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/extra.png" />
     <url>http://www.mediasetplay.mediaset.it</url>
   </channel>
   <channel id="La.5.it">
@@ -5440,6 +5452,814 @@
       <value>R</value>
     </rating>
   </programme>
+  <programme start="20260919035900 +0000" stop="20260919075300 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260919075300 +0000" stop="20260919075900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260919075900 +0000" stop="20260919100000 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919100000 +0000" stop="20260919102500 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501052301/media/14/14/2253e3d9-c813-45c8-9fad-1ae89bbc832e/c29d5b04-e348-422d-b72f-41b2c3adf6be.jpg" />
+  </programme>
+  <programme start="20260919102500 +0000" stop="20260919105800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualità quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052301/media/22/86/25d1ac74-e1c1-40a2-a193-dbd91d5b902b/95f89685-4ca2-4d68-98e1-fbd7f8036efc.jpg" />
+  </programme>
+  <programme start="20260919105800 +0000" stop="20260919113400 +0000" channel="TGCom.it">
+    <title lang="it">Tg5</title>
+    <desc lang="it">Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.</desc>
+    <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201104601/media/19/83/3dc5f120-5a3a-4ed3-90eb-883869171206/d613152c-6f9a-4ed8-93f7-eff523eccf2e.jpg" />
+  </programme>
+  <programme start="20260919113400 +0000" stop="20260919121100 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset</title>
+    <desc lang="it">Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.</desc>
+  </programme>
+  <programme start="20260919121100 +0000" stop="20260919123900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919123900 +0000" stop="20260919132900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919132900 +0000" stop="20260919135400 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Weekend</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000501/media/19/83/8d0748dc-4df7-4af9-8837-e3e7d81dde11/7706072b-c9c3-4242-8928-c253e06eaba1.jpg" />
+  </programme>
+  <programme start="20260919135400 +0000" stop="20260919141400 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Weekend</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000501/media/19/83/8d0748dc-4df7-4af9-8837-e3e7d81dde11/7706072b-c9c3-4242-8928-c253e06eaba1.jpg" />
+  </programme>
+  <programme start="20260919141400 +0000" stop="20260919142700 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Weekend</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101000501/media/19/83/8d0748dc-4df7-4af9-8837-e3e7d81dde11/7706072b-c9c3-4242-8928-c253e06eaba1.jpg" />
+  </programme>
+  <programme start="20260919142700 +0000" stop="20260919162100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919162100 +0000" stop="20260919163000 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto Live</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+  </programme>
+  <programme start="20260919163000 +0000" stop="20260919165800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualità quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201052401/media/22/86/25d1ac74-e1c1-40a2-a193-dbd91d5b902b/95f89685-4ca2-4d68-98e1-fbd7f8036efc.jpg" />
+  </programme>
+  <programme start="20260919165800 +0000" stop="20260919173700 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501052401/media/14/14/2253e3d9-c813-45c8-9fad-1ae89bbc832e/c29d5b04-e348-422d-b72f-41b2c3adf6be.jpg" />
+  </programme>
+  <programme start="20260919173700 +0000" stop="20260919175400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Intelligenze Artificiali 26/27</title>
+    <desc lang="it">Tgcom24 intelligenze artificiali 26/27.</desc>
+  </programme>
+  <programme start="20260919175400 +0000" stop="20260919183200 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260919183200 +0000" stop="20260919185700 +0000" channel="TGCom.it">
+    <title lang="it">Realpolitik</title>
+    <desc lang="it">Con la conduzione di Tommaso Labate, sondaggi, retroscena e analisi in tempo reale, per raccontare la politica e l'attualita' senza filtri.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260919185700 +0000" stop="20260919193200 +0000" channel="TGCom.it">
+    <title lang="it">Realpolitik</title>
+    <desc lang="it">Con la conduzione di Tommaso Labate, sondaggi, retroscena e analisi in tempo reale, per raccontare la politica e l'attualita' senza filtri.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260919193200 +0000" stop="20260919214100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919214100 +0000" stop="20260919220000 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919220000 +0000" stop="20260919220300 +0000" channel="TGCom.it">
+    <title lang="it">Tg5 Start Tecnologia E Mobilita' 2026</title>
+    <desc lang="it">Le notizie piu' importanti nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.</desc>
+  </programme>
+  <programme start="20260919220300 +0000" stop="20260919223600 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919223600 +0000" stop="20260919225700 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919225700 +0000" stop="20260919232200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919232200 +0000" stop="20260919235200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260919235200 +0000" stop="20260920001200 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset La Giornata</title>
+    <desc lang="it">Le principali notizie sportive della giornata a cura della redazione giornalistica di Sport Mediaset.</desc>
+  </programme>
+  <programme start="20260920001200 +0000" stop="20260920002700 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920002700 +0000" stop="20260920005200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920005200 +0000" stop="20260920012200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920012200 +0000" stop="20260920013700 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920013700 +0000" stop="20260920020200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920020200 +0000" stop="20260920023200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920023200 +0000" stop="20260920024700 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920024700 +0000" stop="20260920031200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920031200 +0000" stop="20260920034200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920034200 +0000" stop="20260920035900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920035900 +0000" stop="20260920064300 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260920064300 +0000" stop="20260920080500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920080500 +0000" stop="20260920081300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260920081300 +0000" stop="20260920100000 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920100000 +0000" stop="20260920102500 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260920102500 +0000" stop="20260920105800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260920105800 +0000" stop="20260920113500 +0000" channel="TGCom.it">
+    <title lang="it">Tg5</title>
+    <desc lang="it">Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260920113500 +0000" stop="20260920121900 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset</title>
+    <desc lang="it">Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.</desc>
+    <category lang="it">Calcio</category>
+    <episode-num system="onscreen">SXXL</episode-num>
+  </programme>
+  <programme start="20260920121900 +0000" stop="20260920123500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920123500 +0000" stop="20260920124000 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260920124000 +0000" stop="20260920133700 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920133700 +0000" stop="20260920135500 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Weekend</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260920135500 +0000" stop="20260920142100 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Weekend</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260920142100 +0000" stop="20260920143000 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Weekend</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260920143000 +0000" stop="20260920162100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920162100 +0000" stop="20260920163000 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto Live</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+  </programme>
+  <programme start="20260920163000 +0000" stop="20260920165800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260920165800 +0000" stop="20260920173800 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260920173800 +0000" stop="20260920175400 +0000" channel="TGCom.it">
+    <title lang="it">Tg Dei Ragazzi 2026</title>
+    <desc lang="it">Tg dei ragazzi 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920175400 +0000" stop="20260920183500 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260920183500 +0000" stop="20260920190100 +0000" channel="TGCom.it">
+    <title lang="it">Realpolitik</title>
+    <desc lang="it">Con la conduzione di Tommaso Labate, sondaggi, retroscena e analisi in tempo reale, per raccontare la politica e l'attualita' senza filtri.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260920190100 +0000" stop="20260920193300 +0000" channel="TGCom.it">
+    <title lang="it">Realpolitik</title>
+    <desc lang="it">Con la conduzione di Tommaso Labate, sondaggi, retroscena e analisi in tempo reale, per raccontare la politica e l'attualita' senza filtri.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260920193300 +0000" stop="20260920214000 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920214000 +0000" stop="20260920215900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920215900 +0000" stop="20260920223300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920223300 +0000" stop="20260920225400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920225400 +0000" stop="20260920231400 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset La Giornata</title>
+    <desc lang="it">Le principali notizie sportive della giornata a cura della redazione giornalistica di Sport Mediaset.</desc>
+  </programme>
+  <programme start="20260920231400 +0000" stop="20260920233900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260920233900 +0000" stop="20260921000900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921000900 +0000" stop="20260921002400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921002400 +0000" stop="20260921004900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921004900 +0000" stop="20260921011900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921011900 +0000" stop="20260921013400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921013400 +0000" stop="20260921015900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921015900 +0000" stop="20260921022900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921022900 +0000" stop="20260921024400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921024400 +0000" stop="20260921030900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921030900 +0000" stop="20260921033900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921033900 +0000" stop="20260921035900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921035900 +0000" stop="20260921063900 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260921063900 +0000" stop="20260921072600 +0000" channel="TGCom.it">
+    <title lang="it">Mattino Cinque News</title>
+    <desc lang="it">In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260921072600 +0000" stop="20260921074900 +0000" channel="TGCom.it">
+    <title lang="it">Mattino Cinque News</title>
+    <desc lang="it">In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260921074900 +0000" stop="20260921084500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921084500 +0000" stop="20260921085400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260921085400 +0000" stop="20260921092700 +0000" channel="TGCom.it">
+    <title lang="it">Ore 11</title>
+    <desc lang="it">Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260921092700 +0000" stop="20260921100000 +0000" channel="TGCom.it">
+    <title lang="it">Ore 11</title>
+    <desc lang="it">Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260921100000 +0000" stop="20260921101800 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260921101800 +0000" stop="20260921102500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260921102500 +0000" stop="20260921105800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260921105800 +0000" stop="20260921113600 +0000" channel="TGCom.it">
+    <title lang="it">Tg5</title>
+    <desc lang="it">Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260921113600 +0000" stop="20260921122000 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset</title>
+    <desc lang="it">Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.</desc>
+  </programme>
+  <programme start="20260921122000 +0000" stop="20260921123800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921123800 +0000" stop="20260921124400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260921124400 +0000" stop="20260921130300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921130300 +0000" stop="20260921132300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921132300 +0000" stop="20260921133800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24</title>
+    <desc lang="it">Tgcom24.</desc>
+  </programme>
+  <programme start="20260921133800 +0000" stop="20260921135600 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Giorno</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260921135600 +0000" stop="20260921142200 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Giorno</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260921142200 +0000" stop="20260921144500 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Giorno</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260921144500 +0000" stop="20260921151600 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260921151600 +0000" stop="20260921152100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260921152100 +0000" stop="20260921153900 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260921153900 +0000" stop="20260921154900 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260921154900 +0000" stop="20260921162100 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260921162100 +0000" stop="20260921163000 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto Live</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+  </programme>
+  <programme start="20260921163000 +0000" stop="20260921165800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260921165800 +0000" stop="20260921173200 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260921173200 +0000" stop="20260921175400 +0000" channel="TGCom.it">
+    <title lang="it">10 Minuti</title>
+    <desc lang="it">10 minuti focalizzati sui fatti principali della giornata, con interviste e dibattiti sui temi piu' rilevanti di attualita'.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260921175400 +0000" stop="20260921183100 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260921183100 +0000" stop="20260921192900 +0000" channel="TGCom.it">
+    <title lang="it">4 Di Sera</title>
+    <desc lang="it">Dibattito quotidiano sui fatti salienti della giornata. Politica, economia, i principali casi di cronaca ed attualita'.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260921192900 +0000" stop="20260921214100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921214100 +0000" stop="20260921220100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921220100 +0000" stop="20260921223500 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset Monday Night</title>
+    <desc lang="it">Tutte le notizie sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset. Conduce Benedetta Radaelli.</desc>
+    <category lang="it">Calcio</category>
+  </programme>
+  <programme start="20260921223500 +0000" stop="20260921225800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921225800 +0000" stop="20260921232300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921232300 +0000" stop="20260921235300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260921235300 +0000" stop="20260922000800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922000800 +0000" stop="20260922003300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922003300 +0000" stop="20260922010300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922010300 +0000" stop="20260922011800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922011800 +0000" stop="20260922014300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922014300 +0000" stop="20260922021300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922021300 +0000" stop="20260922022800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922022800 +0000" stop="20260922025300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922025300 +0000" stop="20260922032300 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922032300 +0000" stop="20260922033800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922033800 +0000" stop="20260922035400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922035400 +0000" stop="20260922035900 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Tg Meteo</title>
+    <desc lang="it">Tgcom24 - Tg meteo.</desc>
+  </programme>
+  <programme start="20260922035900 +0000" stop="20260922063900 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260922063900 +0000" stop="20260922072600 +0000" channel="TGCom.it">
+    <title lang="it">Mattino Cinque News</title>
+    <desc lang="it">In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260922072600 +0000" stop="20260922074800 +0000" channel="TGCom.it">
+    <title lang="it">Mattino Cinque News</title>
+    <desc lang="it">In diretta con i fatti di cronaca, politica, spettacolo e gossip. Conducono Francesco Vecchi e Federica Panicucci.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260922074800 +0000" stop="20260922084600 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922084600 +0000" stop="20260922085400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260922085400 +0000" stop="20260922092800 +0000" channel="TGCom.it">
+    <title lang="it">Ore 11</title>
+    <desc lang="it">Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260922092800 +0000" stop="20260922100000 +0000" channel="TGCom.it">
+    <title lang="it">Ore 11</title>
+    <desc lang="it">Il nuovo programma incentrato sull'attualita' e sulla cronaca, condotto da Milo Infante.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260922100000 +0000" stop="20260922101900 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260922101900 +0000" stop="20260922102500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260922102500 +0000" stop="20260922105800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260922105800 +0000" stop="20260922113500 +0000" channel="TGCom.it">
+    <title lang="it">Tg5</title>
+    <desc lang="it">Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.</desc>
+  </programme>
+  <programme start="20260922113500 +0000" stop="20260922121800 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset</title>
+    <desc lang="it">Approfondimento quotidiano in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.</desc>
+  </programme>
+  <programme start="20260922121800 +0000" stop="20260922123200 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922123200 +0000" stop="20260922123800 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260922123800 +0000" stop="20260922130500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922130500 +0000" stop="20260922133500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922133500 +0000" stop="20260922135000 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24</title>
+    <desc lang="it">Tgcom24.</desc>
+  </programme>
+  <programme start="20260922135000 +0000" stop="20260922135800 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Giorno</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260922135800 +0000" stop="20260922142200 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Giorno</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260922142200 +0000" stop="20260922143600 +0000" channel="TGCom.it">
+    <title lang="it">Diario Del Giorno</title>
+    <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260922143600 +0000" stop="20260922144500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta 2026</title>
+    <desc lang="it">Tgcom24 diretta 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922144500 +0000" stop="20260922151400 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260922151400 +0000" stop="20260922152000 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Meteo</title>
+    <desc lang="it">Previsioni meteorologiche del territorio italiano, diviso per zone geografiche, dettagliate e costantemente aggiornate.</desc>
+  </programme>
+  <programme start="20260922152000 +0000" stop="20260922153700 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260922153700 +0000" stop="20260922154700 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260922154700 +0000" stop="20260922162100 +0000" channel="TGCom.it">
+    <title lang="it">Dentro La Notizia</title>
+    <desc lang="it">Approfondimenti di cronaca, attualita' e molto altro con Gianluigi Nuzzi.</desc>
+    <category lang="it">Magazine</category>
+  </programme>
+  <programme start="20260922162100 +0000" stop="20260922163000 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto Live</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+  </programme>
+  <programme start="20260922163000 +0000" stop="20260922165800 +0000" channel="TGCom.it">
+    <title lang="it">Studio Aperto</title>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260922165800 +0000" stop="20260922173200 +0000" channel="TGCom.it">
+    <title lang="it">Tg4</title>
+    <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
+    <category lang="it">Telegiornale</category>
+  </programme>
+  <programme start="20260922173200 +0000" stop="20260922174600 +0000" channel="TGCom.it">
+    <title lang="it">10 Minuti '26/'27</title>
+    <desc lang="it">10 minuti focalizzati sui fatti principali della giornata, con interviste e dibattiti sui temi piu' rilevanti di attualita'.</desc>
+    <category lang="it">Informazione</category>
+  </programme>
+  <programme start="20260922174600 +0000" stop="20260922175400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24</title>
+    <desc lang="it">Tgcom24.</desc>
+  </programme>
+  <programme start="20260922175400 +0000" stop="20260922183100 +0000" channel="TGCom.it">
+    <title lang="it">Simulcast Canale 5</title>
+    <desc lang="it">Simulcast Canale 5.</desc>
+  </programme>
+  <programme start="20260922183100 +0000" stop="20260922192800 +0000" channel="TGCom.it">
+    <title lang="it">4 Di Sera</title>
+    <desc lang="it">Dibattito quotidiano sui fatti salienti della giornata. Politica, economia, i principali casi di cronaca ed attualita'.</desc>
+    <category lang="it">Talk Show</category>
+  </programme>
+  <programme start="20260922192800 +0000" stop="20260922214500 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922214500 +0000" stop="20260922220400 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922220400 +0000" stop="20260922222200 +0000" channel="TGCom.it">
+    <title lang="it">Sport Mediaset La Giornata</title>
+    <desc lang="it">Le principali notizie sportive della giornata a cura della redazione giornalistica di Sport Mediaset.</desc>
+  </programme>
+  <programme start="20260922222200 +0000" stop="20260922224100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922224100 +0000" stop="20260922231100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922231100 +0000" stop="20260922234100 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922234100 +0000" stop="20260922235600 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom Rassegna Stampa 2026</title>
+    <desc lang="it">Tgcom rassegna stampa 2026.</desc>
+    <date>2026</date>
+  </programme>
+  <programme start="20260922235600 +0000" stop="20260923002600 +0000" channel="TGCom.it">
+    <title lang="it">Tgcom24 Diretta Roma 2026</title>
+    <desc lang="it">Tgcom24 diretta roma 2026.</desc>
+    <date>2026</date>
+  </programme>
   <programme start="20260919034600 +0000" stop="20260919043400 +0000" channel="Rete.4.it">
     <title lang="it">Boccaccio: Renzo E Luciana</title>
     <desc lang="it">Concettualmente ispirato alle novelle di Boccaccio, ogni episodio si incentra sul sesso nell'Italia degli anni sessanta, periodo di boom economico e di grandi cambiamenti culturali. Regia di V. De Sica, con M. Solinas, G. Gilioli; ITA 1962.</desc>
@@ -6104,6 +6924,166 @@
     <title lang="it">Dalla Parte Degli Animali</title>
     <desc lang="it">Tante storie con protagonisti i nostri amici a quattro zampe. Conduce Vittoria Brambilla.</desc>
     <category lang="it">Lifestyle</category>
+  </programme>
+  <programme start="20260919040200 +0000" stop="20260919070000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+  </programme>
+  <programme start="20260919070000 +0000" stop="20260919103000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260919103000 +0000" stop="20260919124500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260919124500 +0000" stop="20260919144500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260919144500 +0000" stop="20260919164500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260919164500 +0000" stop="20260919192000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260919192000 +0000" stop="20260919220000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260919220000 +0000" stop="20260920000000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260920000000 +0000" stop="20260920040200 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Appuntamento quotidiano con la casa del Grande Fratello.</desc>
+    <category lang="it">Reality show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314737001000301/media/13/13/e28e0685-4b93-4d39-948d-9eeccbde5921/b4fd3fbb-5bf3-4587-a61b-e0fe15be821e.jpg" />
+  </programme>
+  <programme start="20260920040200 +0000" stop="20260920070000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920070000 +0000" stop="20260920103000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920103000 +0000" stop="20260920124500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920124500 +0000" stop="20260920144500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920144500 +0000" stop="20260920164500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920164500 +0000" stop="20260920192000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920192000 +0000" stop="20260920220000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920220000 +0000" stop="20260920235900 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260920235900 +0000" stop="20260921040200 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921040200 +0000" stop="20260921070000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921070000 +0000" stop="20260921103000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921103000 +0000" stop="20260921124500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921124500 +0000" stop="20260921144500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921144500 +0000" stop="20260921164500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921164500 +0000" stop="20260921192000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921192000 +0000" stop="20260921220000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921220000 +0000" stop="20260921235900 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260921235900 +0000" stop="20260922040200 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922040200 +0000" stop="20260922070000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922070000 +0000" stop="20260922103000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922103000 +0000" stop="20260922124500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922124500 +0000" stop="20260922144500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922144500 +0000" stop="20260922164500 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922164500 +0000" stop="20260922192000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922192000 +0000" stop="20260922220000 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922220000 +0000" stop="20260922235900 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
+  </programme>
+  <programme start="20260922235900 +0000" stop="20260923040200 +0000" channel="Mediaset.Extra.it">
+    <title lang="it">Grande Fratello Vip Live</title>
+    <desc lang="it">Grande Fratello Vip Live.</desc>
   </programme>
   <programme start="20260919040000 +0000" stop="20260919045200 +0000" channel="La.5.it">
     <title lang="it">Venerdì 12 Aprile</title>
