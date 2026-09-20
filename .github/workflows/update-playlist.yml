@@ -1,0 +1,43 @@
+name: Aggiorna IPTV Grado
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 5 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: aggiorna-iptv-grado
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Scarica repository
+        uses: actions/checkout@v4
+
+      - name: Configura Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Aggiorna playlist
+        run: python scripts/update_playlist.py
+
+      - name: Pubblica aggiornamento
+        shell: bash
+        run: |
+          if git diff --quiet -- IPTV_Grado_Full_v1.0.m3u; then
+            echo "Nessun aggiornamento necessario."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add IPTV_Grado_Full_v1.0.m3u
+          git commit -m "Aggiornamento automatico IPTV Grado"
+          git push
