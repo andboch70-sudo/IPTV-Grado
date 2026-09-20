@@ -1,12 +1,12 @@
 #EXTM3U
-#PLAYLIST:IPTV Grado - Safe Auto Update
-#NOTA:Aggiornamento automatico protetto per Hisense VIDAA / SS IPTV
-#EXTINF:-1 tvg-name="Rai 1" tvg-logo="https://i.imgur.com/CAx7yRm.png" tvg-id="Rai1.it" tvg-chno="1" tvg-country="IT" group-title="Italy",Rai 1
-https://d3k8wzt41aflvx.cloudfront.net/RAI1/Live.m3u8
-#EXTINF:-1 tvg-name="Rai 2" tvg-logo="https://i.imgur.com/zA0PTcs.png" tvg-id="Rai2.it" tvg-chno="2" tvg-country="IT" group-title="Italy",Rai 2
-https://d3k8wzt41aflvx.cloudfront.net/RAI2/Live.m3u8
-#EXTINF:-1 tvg-name="Rai 3" tvg-logo="https://i.imgur.com/9kuQCIi.png" tvg-id="Rai3.it" tvg-chno="3" tvg-country="IT" group-title="Italy",Rai 3
-https://d3k8wzt41aflvx.cloudfront.net/RAI3/Live.m3u8
+#PLAYLIST:IPTV Grado - Safe Auto Update v2.2
+#NOTA:Ottimizzata per Hisense VIDAA / SS IPTV
+#EXTINF:-1 tvg-name="Rai 1" tvg-logo="https://i.imgur.com/CAx7yRm.png" tvg-id="Rai1.it" tvg-chno="1" tvg-country="IT" group-title="Italy",Rai 1 Ⓖ
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803&output=7&forceUserAgent=rainet/4.0.5
+#EXTINF:-1 tvg-name="Rai 2" tvg-logo="https://i.imgur.com/zA0PTcs.png" tvg-id="Rai2.it" tvg-chno="2" tvg-country="IT" group-title="Italy",Rai 2 Ⓖ
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718&output=7&forceUserAgent=rainet/4.0.5
+#EXTINF:-1 tvg-name="Rai 3" tvg-logo="https://i.imgur.com/9kuQCIi.png" tvg-id="Rai3.it" tvg-chno="3" tvg-country="IT" group-title="Italy",Rai 3 Ⓖ
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 tvg-name="La7" tvg-logo="https://i.imgur.com/F90mpSa.png" tvg-id="LA7.HD.it" tvg-chno="7" tvg-country="IT" group-title="Italy",La7
 https://d1chghleocc9sm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-evfku205gqrtf/Live.m3u8
 #EXTINF:-1 tvg-name="TV8" tvg-logo="https://i.imgur.com/xvoHVOU.png" tvg-id="TV8.HD.it" tvg-chno="8" tvg-country="IT" group-title="Italy",TV8 Ⓖ
@@ -19,8 +19,8 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746966&output=7&forc
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=395276&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 tvg-name="Rai Movie" tvg-logo="https://i.imgur.com/RKpO8CE.png" tvg-id="RaiMovie.it" tvg-chno="24" tvg-country="IT" group-title="Italy",Rai Movie Ⓖ
 https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747002&output=7&forceUserAgent=rainet/4.0.5
-#EXTINF:-1 tvg-name="Rai Premium" tvg-logo="https://i.imgur.com/RKI4nFy.png" tvg-id="RaiPremium.it" tvg-chno="25" tvg-country="IT" group-title="Italy",Rai Premium
-https://d3k8wzt41aflvx.cloudfront.net/RaiPremium/Live.m3u8
+#EXTINF:-1 tvg-name="Rai Premium" tvg-logo="https://i.imgur.com/RKI4nFy.png" tvg-id="RaiPremium.it" tvg-chno="25" tvg-country="IT" group-title="Italy",Rai Premium Ⓖ
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746992&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 tvg-name="Cielo" tvg-logo="https://i.imgur.com/cPluF03.png" tvg-id="cielo.it" tvg-chno="26" tvg-country="IT" group-title="Italy",Cielo Ⓖ
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/11219/cieloweb/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
 #EXTINF:-1 tvg-name="TV 2000" tvg-logo="https://i.imgur.com/x7RaK3a.png" tvg-id="TV2000.va" tvg-chno="28" tvg-country="IT" group-title="Italy",TV 2000
@@ -53,14 +53,14 @@ https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746899&output=7&forc
 https://495c5a85d9074f29acffeaea9e0215eb.msvdn.net/super/super_main/super_main_hbbtv/playlist.m3u8
 #EXTINF:-1 tvg-name="BeJoy.Kids" tvg-logo="https://i.imgur.com/zuR9Go5.png" tvg-id="BeJoyKids.it" tvg-chno="247" tvg-country="IT" group-title="Italy",BeJoy.Kids
 https://stream.paroledivita.org/bejoy.m3u8
-#EXTINF:-1 tvg-name="Rai News 24" tvg-logo="https://i.imgur.com/gdzGwB6.png" tvg-id="RaiNews24.it" tvg-chno="48" tvg-country="IT" group-title="Italy",Rai News 24
-https://d3k8wzt41aflvx.cloudfront.net/RAINEWS24/Live.m3u8
+#EXTINF:-1 tvg-name="Rai News 24" tvg-logo="https://i.imgur.com/gdzGwB6.png" tvg-id="RaiNews24.it" tvg-chno="48" tvg-country="IT" group-title="Italy",Rai News 24 Ⓖ
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=1&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 tvg-name="Sky TG24" tvg-logo="https://i.imgur.com/q4d3Dah.png" tvg-id="Sky.TG24.it" tvg-chno="50" tvg-country="IT" group-title="Italy",Sky TG24 Ⓖ
 https://hlslive-web-gcdn-skycdn-it.akamaized.net/TACT/12221/web/master.m3u8?hdnts=st=1764666351~exp=1829466206~acl=/*~hmac=b0e9165b6c55027903ad103c8219f363d8765eb300c0d9a339e9767fc3509556
-#EXTINF:-1 tvg-name="Rai Storia" tvg-logo="https://i.imgur.com/K8y5q8x.png" tvg-id="RaiStoria.it" tvg-chno="54" tvg-country="IT" group-title="Italy",Rai Storia
-https://d3k8wzt41aflvx.cloudfront.net/RAIStoria/Live.m3u8
-#EXTINF:-1 tvg-name="Rai Scuola" tvg-logo="https://i.imgur.com/tmtJW6s.png" tvg-id="RaiScuola.it" tvg-chno="57" tvg-country="IT" group-title="Italy",Rai Scuola
-https://d3k8wzt41aflvx.cloudfront.net/RAIScuola/Live.m3u8
+#EXTINF:-1 tvg-name="Rai Storia" tvg-logo="https://i.imgur.com/K8y5q8x.png" tvg-id="RaiStoria.it" tvg-chno="54" tvg-country="IT" group-title="Italy",Rai Storia Ⓖ
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=746990&output=7&forceUserAgent=rainet/4.0.5
+#EXTINF:-1 tvg-name="Rai Scuola" tvg-logo="https://i.imgur.com/tmtJW6s.png" tvg-id="RaiScuola.it" tvg-chno="57" tvg-country="IT" group-title="Italy",Rai Scuola Ⓖ
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=747011&output=7&forceUserAgent=rainet/4.0.5
 #EXTINF:-1 tvg-name="Senato TV" tvg-logo="https://i.imgur.com/FoQoNZW.png" tvg-id="SenatoTV.it" tvg-chno="89" tvg-country="IT" group-title="Italy",Senato TV
 https://senato-live.morescreens.com/SENATO_1_001/playlist.m3u8
 #EXTINF:-1 tvg-name="Camera dei Deputati" tvg-logo="https://i.imgur.com/fqGn1k9.png" tvg-id="CameradeiDeputati.it" tvg-chno="90" tvg-country="IT" group-title="Italy",Camera dei Deputati Ⓢ
