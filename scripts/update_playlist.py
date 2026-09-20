@@ -8,16 +8,19 @@ SOURCE = (
 
 OUTPUT = Path("IPTV_Grado_Full_v1.0.m3u")
 
+EPG_URL = (
+    "https://raw.githubusercontent.com/"
+    "andboch70-sudo/IPTV-Grado/refs/heads/main/EPG_Grado.xml"
+)
+
 
 # =========================================================
 # IPTV GRADO - SAFE AUTO UPDATE
-# Versione 2.4 STABILE - Hisense VIDAA / SS IPTV
+# Versione 2.5 - EPG INTEGRATO
+# Hisense VIDAA / SS IPTV
 # =========================================================
 
 
-# Stream Mediaset esclusi:
-# sulla nostra Hisense / SS IPTV hanno dato
-# congelamento oppure schermo nero.
 BLOCKED = (
     "live02-seg.msf.cdn.mediaset.net",
     "live2-mediaset-it.akamaized.net",
@@ -102,12 +105,59 @@ WANTED = [
 ]
 
 
+# =========================================================
+# ASSOCIAZIONE CANALE -> EPG
+#
+# Usiamo esclusivamente ID verificati nel nostro
+# EPG_Grado.xml.
+# =========================================================
+
+EPG_IDS = {
+    "Rai 1": "Rai1.it",
+    "Rai 2": "Rai2.it",
+    "Rai 3": "Rai3.it",
+
+    "Nove": "Nove.it",
+
+    "Rai 4": "Rai4.it",
+    "Rai 5": "Rai5.it",
+    "Rai Movie": "RaiMovie.it",
+    "Rai Premium": "RaiPremium.it",
+
+    "Cielo": "cielo.it",
+
+    "Real Time": "Real.Time.it",
+    "Food Network": "Food.Network.it",
+    "Discovery Channel": "Discovery.Channel.it",
+    "DMAX": "DMAX.it",
+    "HGTV": "HGTV.it",
+
+    "K2": "K2.it",
+    "Rai Gulp": "RaiGulp.it",
+    "Rai YoYo": "RaiYoyo.it",
+    "Frisbee": "Frisbee.it",
+    "Super!": "Super!.it",
+
+    "Rai News 24": "RaiNews24.it",
+    "Sky TG24": "Sky.TG24.it",
+    "Rai Storia": "RaiStoria.it",
+    "Rai Scuola": "RaiScuola.it",
+
+    "Rai Sport": "RaiSport.it",
+
+    "R101 TV": "R101tv.it",
+    "Deejay TV": "Deejay.TV.it",
+}
+
+
 def clean_name(name):
 
     for symbol in "ⒼⓈⓎⓉ":
         name = name.replace(symbol, "")
 
-    return " ".join(name.split()).strip().lower()
+    return " ".join(
+        name.split()
+    ).strip().lower()
 
 
 def download():
@@ -115,7 +165,7 @@ def download():
     request = urllib.request.Request(
         SOURCE,
         headers={
-            "User-Agent": "IPTV-Grado/2.4"
+            "User-Agent": "IPTV-Grado/2.5"
         },
     )
 
@@ -148,7 +198,10 @@ def parse(text):
 
         info = line
 
-        name = info.split(",", 1)[-1].strip()
+        name = info.split(
+            ",",
+            1
+        )[-1].strip()
 
         i += 1
 
@@ -168,7 +221,9 @@ def parse(text):
             ):
 
                 url = current
+
                 i += 1
+
                 break
 
             if current:
@@ -196,27 +251,65 @@ def stream_score(url):
 
     score = 0
 
-    # Rai:
-    # Mediapolis è stato verificato direttamente
-    # sulla nostra Hisense ed è stabile.
+    # Rai Mediapolis:
+    # verificato direttamente sulla Hisense.
     if "mediapolis.rai.it/relinker" in lower:
         score += 100
 
     if ".m3u8" in lower:
         score += 10
 
-    # CloudFront resta seconda scelta.
     if "cloudfront.net" in lower:
         score += 5
 
     return score
 
 
+def add_epg_id(info, requested_name):
+
+    epg_id = EPG_IDS.get(
+        requested_name
+    )
+
+    if not epg_id:
+        return info
+
+    # Evita di mantenere un eventuale tvg-id
+    # proveniente dalla playlist sorgente.
+    parts = info.split(",")
+
+    attributes = parts[0]
+
+    display_name = ",".join(
+        parts[1:]
+    )
+
+    import re
+
+    attributes = re.sub(
+        r'\s+tvg-id="[^"]*"',
+        "",
+        attributes,
+    )
+
+    attributes += (
+        f' tvg-id="{epg_id}"'
+    )
+
+    return (
+        attributes
+        + ","
+        + display_name
+    )
+
+
 # =========================================================
-# DOWNLOAD SORGENTE
+# DOWNLOAD PLAYLIST
 # =========================================================
 
-print("Scaricamento playlist Free-TV...")
+print(
+    "Scaricamento playlist Free-TV..."
+)
 
 text = download()
 
@@ -275,12 +368,15 @@ for name, info, extras, url in source_channels:
 
 
 # =========================================================
-# COSTRUZIONE PLAYLIST IPTV GRADO
+# CREA PLAYLIST
 # =========================================================
 
 output = [
-    "#EXTM3U",
-    "#PLAYLIST:IPTV Grado - Stable v2.4",
+    (
+        '#EXTM3U '
+        f'x-tvg-url="{EPG_URL}"'
+    ),
+    "#PLAYLIST:IPTV Grado - Stable v2.5 + EPG",
     "#NOTA:Ottimizzata per Hisense VIDAA / SS IPTV",
 ]
 
@@ -288,6 +384,8 @@ output = [
 added = set()
 
 count = 0
+
+epg_count = 0
 
 
 for requested_name in WANTED:
@@ -310,26 +408,22 @@ for requested_name in WANTED:
 
         continue
 
-
     best = max(
         available,
         key=lambda channel:
             stream_score(channel[3]),
     )
 
-
     name, info, extras, url = best
-
 
     if normalized in added:
         continue
-
 
     added.add(normalized)
 
 
     # =====================================================
-    # TELEQUATTRO
+    # TELEQUATTRO = CANALE 10
     # =====================================================
 
     if normalized == clean_name(
@@ -342,6 +436,26 @@ for requested_name in WANTED:
         )
 
 
+    # =====================================================
+    # AGGIUNGE tvg-id QUANDO DISPONIBILE
+    # =====================================================
+
+    info = add_epg_id(
+        info,
+        requested_name,
+    )
+
+    if requested_name in EPG_IDS:
+
+        epg_count += 1
+
+        print(
+            "EPG ASSOCIATO:",
+            requested_name,
+            EPG_IDS[requested_name],
+        )
+
+
     output.append(info)
 
     output.extend(extras)
@@ -349,7 +463,6 @@ for requested_name in WANTED:
     output.append(url)
 
     count += 1
-
 
     print(
         "AGGIUNTO:",
@@ -382,21 +495,40 @@ OUTPUT.write_text(
 
 
 print("")
-print("======================================")
+print(
+    "======================================"
+)
 
 print(
     f"IPTV Grado aggiornata: "
     f"{count} canali."
 )
 
-print("Duplicati eliminati.")
+print(
+    f"Canali associati EPG: "
+    f"{epg_count}."
+)
 
-print("Rai: priorita Mediapolis.")
+print(
+    "Rai: priorita Mediapolis."
+)
 
-print("Mediaset incompatibili esclusi.")
+print(
+    "Mediaset incompatibili esclusi."
+)
 
-print("Telequattro configurato come canale 10.")
+print(
+    "Telequattro configurato come canale 10."
+)
 
-print("Versione stabile 2.4.")
+print(
+    "EPG Grado integrato."
+)
 
-print("======================================")
+print(
+    "Versione stabile 2.5."
+)
+
+print(
+    "======================================"
+)
