@@ -11,67 +11,24 @@ OUTPUT = Path("IPTV_Grado_Full_v1.0.m3u")
 
 # =========================================================
 # IPTV GRADO - SAFE AUTO UPDATE
-# Versione 2.3 - Hisense VIDAA / SS IPTV
+# Versione 2.4 STABILE - Hisense VIDAA / SS IPTV
 # =========================================================
 
 
-# Stream che sulla nostra Hisense / SS IPTV hanno dato
-# problemi di congelamento.
+# Stream Mediaset esclusi:
+# sulla nostra Hisense / SS IPTV hanno dato
+# congelamento oppure schermo nero.
 BLOCKED = (
     "live02-seg.msf.cdn.mediaset.net",
+    "live2-mediaset-it.akamaized.net",
+    "live3-mediaset-it.akamaized.net",
 )
 
-
-# =========================================================
-# OVERRIDE MEDIASET
-# =========================================================
-#
-# Questi tre stream Akamai vengono inseriti direttamente
-# nella playlist e NON vengono presi da Free-TV.
-#
-# Per ora testiamo solo i tre Mediaset principali.
-#
-
-MEDIASET_OVERRIDE = {
-    "Rete 4":
-        "https://live3-mediaset-it.akamaized.net/"
-        "Content/hls_h0_clr_vos/live/channel(r4)/index.m3u8",
-
-    "Canale 5":
-        "https://live3-mediaset-it.akamaized.net/"
-        "Content/hls_h0_clr_vos/live/channel(c5)/index.m3u8",
-
-    "Italia 1":
-        "https://live3-mediaset-it.akamaized.net/"
-        "Content/hls_h0_clr_vos/live/channel(i1)/index.m3u8",
-}
-
-
-# Canali della nostra playlist.
-#
-# IMPORTANTE:
-# Rete 4, Canale 5 e Italia 1 vengono messi subito
-# dopo Rai 1-2-3, così l'ordine iniziale è:
-#
-# Rai 1
-# Rai 2
-# Rai 3
-# Rete 4
-# Canale 5
-# Italia 1
-# La7
-# TV8
-# Nove
-#
 
 WANTED = [
     "Rai 1",
     "Rai 2",
     "Rai 3",
-
-    "Rete 4",
-    "Canale 5",
-    "Italia 1",
 
     "La7",
     "TV8",
@@ -150,9 +107,7 @@ def clean_name(name):
     for symbol in "ⒼⓈⓎⓉ":
         name = name.replace(symbol, "")
 
-    return " ".join(
-        name.split()
-    ).strip().lower()
+    return " ".join(name.split()).strip().lower()
 
 
 def download():
@@ -160,7 +115,7 @@ def download():
     request = urllib.request.Request(
         SOURCE,
         headers={
-            "User-Agent": "IPTV-Grado/2.3"
+            "User-Agent": "IPTV-Grado/2.4"
         },
     )
 
@@ -193,10 +148,7 @@ def parse(text):
 
         info = line
 
-        name = info.split(
-            ",",
-            1
-        )[-1].strip()
+        name = info.split(",", 1)[-1].strip()
 
         i += 1
 
@@ -216,9 +168,7 @@ def parse(text):
             ):
 
                 url = current
-
                 i += 1
-
                 break
 
             if current:
@@ -246,18 +196,16 @@ def stream_score(url):
 
     score = 0
 
-    # PRIORITA' MASSIMA RAI
-    #
-    # Questa scelta è stata verificata sulla nostra
-    # Hisense: i relinker Mediapolis funzionano,
-    # mentre alcuni CloudFront Rai congelavano.
-
+    # Rai:
+    # Mediapolis è stato verificato direttamente
+    # sulla nostra Hisense ed è stabile.
     if "mediapolis.rai.it/relinker" in lower:
         score += 100
 
     if ".m3u8" in lower:
         score += 10
 
+    # CloudFront resta seconda scelta.
     if "cloudfront.net" in lower:
         score += 5
 
@@ -265,12 +213,10 @@ def stream_score(url):
 
 
 # =========================================================
-# DOWNLOAD FREE-TV
+# DOWNLOAD SORGENTE
 # =========================================================
 
-print(
-    "Scaricamento playlist Free-TV..."
-)
+print("Scaricamento playlist Free-TV...")
 
 text = download()
 
@@ -289,7 +235,7 @@ wanted = {
 
 
 # =========================================================
-# RACCOLTA STREAM FREE-TV
+# RACCOLTA STREAM
 # =========================================================
 
 candidates = {}
@@ -302,18 +248,8 @@ for name, info, extras, url in source_channels:
     if normalized not in wanted:
         continue
 
-    # I tre Mediaset principali vengono gestiti
-    # esclusivamente tramite MEDIASET_OVERRIDE.
-
-    if normalized in {
-        clean_name(x)
-        for x in MEDIASET_OVERRIDE
-    }:
-
-        continue
-
     if any(
-        domain in url
+        domain in url.lower()
         for domain in BLOCKED
     ):
 
@@ -344,7 +280,7 @@ for name, info, extras, url in source_channels:
 
 output = [
     "#EXTM3U",
-    "#PLAYLIST:IPTV Grado - Safe Auto Update v2.3",
+    "#PLAYLIST:IPTV Grado - Stable v2.4",
     "#NOTA:Ottimizzata per Hisense VIDAA / SS IPTV",
 ]
 
@@ -359,41 +295,6 @@ for requested_name in WANTED:
     normalized = clean_name(
         requested_name
     )
-
-
-    # =====================================================
-    # MEDIASET OVERRIDE
-    # =====================================================
-
-    if requested_name in MEDIASET_OVERRIDE:
-
-        url = MEDIASET_OVERRIDE[
-            requested_name
-        ]
-
-        output.append(
-            f'#EXTINF:-1 group-title="Mediaset",'
-            f'{requested_name}'
-        )
-
-        output.append(url)
-
-        added.add(normalized)
-
-        count += 1
-
-        print(
-            "MEDIASET TEST:",
-            requested_name,
-            url,
-        )
-
-        continue
-
-
-    # =====================================================
-    # ALTRI CANALI
-    # =====================================================
 
     available = candidates.get(
         normalized,
@@ -481,27 +382,21 @@ OUTPUT.write_text(
 
 
 print("")
-print(
-    "======================================"
-)
+print("======================================")
 
 print(
     f"IPTV Grado aggiornata: "
     f"{count} canali."
 )
 
-print(
-    "Rai: Mediapolis confermato."
-)
+print("Duplicati eliminati.")
 
-print(
-    "Mediaset: test Akamai Rete4/C5/I1."
-)
+print("Rai: priorita Mediapolis.")
 
-print(
-    "Telequattro configurato come canale 10."
-)
+print("Mediaset incompatibili esclusi.")
 
-print(
-    "======================================"
-)
+print("Telequattro configurato come canale 10.")
+
+print("Versione stabile 2.4.")
+
+print("======================================")
