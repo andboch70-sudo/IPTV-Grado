@@ -31,17 +31,40 @@ jobs:
       - name: Aggiorna EPG
         run: python scripts/update_epg.py
 
+      - name: Verifica EPG generato
+        shell: bash
+        run: |
+          if [ ! -s EPG_Grado.xml ]; then
+            echo "ERRORE: EPG_Grado.xml è vuoto."
+            exit 1
+          fi
+
+          EPG_SIZE=$(stat -c%s EPG_Grado.xml)
+
+          echo "Dimensione EPG generato: $EPG_SIZE bytes"
+
+          if [ "$EPG_SIZE" -lt 1000000 ]; then
+            echo "ERRORE: EPG_Grado.xml è troppo piccolo."
+            exit 1
+          fi
+
+          echo "EPG verificato correttamente."
+
       - name: Pubblica aggiornamenti
         shell: bash
         run: |
-          if git diff --quiet -- IPTV_Grado_Full_v1.0.m3u EPG_Grado.xml; then
-            echo "Nessun aggiornamento necessario."
-            exit 0
-          fi
-
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add IPTV_Grado_Full_v1.0.m3u EPG_Grado.xml
+
+          if git diff --cached --quiet; then
+            echo "Nessun aggiornamento necessario."
+            exit 0
+          fi
+
+          echo "File da pubblicare:"
+          git diff --cached --stat
+
           git commit -m "Aggiornamento automatico IPTV Grado + EPG"
           git push
