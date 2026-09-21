@@ -1,61 +1,20 @@
-#EXTM3U
+#EXTM3U x-tvg-url="https://raw.githubusercontent.com/andboch70-sudo/IPTV-Grado/refs/heads/main/EPG_Grado_TEST.xml"
+#PLAYLIST:IPTV Grado - TEST EPG RIDOTTO
 
-#EXTINF:-1,01 - Rete 4
+#EXTINF:-1 tvg-id="Rai1.it",01 - Rai 1
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=2606803
+
+#EXTINF:-1 tvg-id="Rai2.it",02 - Rai 2
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308718
+
+#EXTINF:-1 tvg-id="Rai3.it",03 - Rai 3
+https://mediapolis.rai.it/relinker/relinkerServlet.htm?cont=308709
+
+#EXTINF:-1 tvg-id="Rete.4.it",04 - Rete 4
 https://live03-col.msf.cdn.mediaset.net/live/ch-r4/r4-clr.isml/manifest.mpd
 
-#EXTINF:-1,02 - Canale 5
+#EXTINF:-1 tvg-id="Canale.5.it",05 - Canale 5
 https://live03-col.msf.cdn.mediaset.net/live/ch-c5/c5-clr.isml/manifest.mpd
 
-#EXTINF:-1,03 - Italia 1
+#EXTINF:-1 tvg-id="Italia.1.it",06 - Italia 1
 https://live03-col.msf.cdn.mediaset.net/live/ch-i1/i1-clr.isml/manifest.mpd
-
-#EXTINF:-1,04 - 20 Mediaset
-https://live03-col.msf.cdn.mediaset.net/live/ch-lb/lb-clr.isml/manifest.mpd
-
-#EXTINF:-1,05 - Iris
-https://live03-col.msf.cdn.mediaset.net/live/ch-ki/ki-clr.isml/manifest.mpd
-
-#EXTINF:-1,06 - TwentySeven
-https://live03-col.msf.cdn.mediaset.net/live/ch-ts/ts-clr.isml/manifest.mpd
-
-#EXTINF:-1,07 - La5
-https://live03-col.msf.cdn.mediaset.net/live/ch-ka/ka-clr.isml/manifest.mpd
-
-#EXTINF:-1,08 - Cine34
-https://live03-col.msf.cdn.mediaset.net/live/ch-b6/b6-clr.isml/manifest.mpd
-
-#EXTINF:-1,09 - Focus
-https://live03-col.msf.cdn.mediaset.net/live/ch-fu/fu-clr.isml/manifest.mpd
-
-#EXTINF:-1,10 - Top Crime
-https://live03-col.msf.cdn.mediaset.net/live/ch-lt/lt-clr.isml/manifest.mpd
-
-#EXTINF:-1,11 - Boing
-https://live03-col.msf.cdn.mediaset.net/live/ch-kb/kb-clr.isml/manifest.mpd
-
-#EXTINF:-1,12 - Italia 2
-https://live03-col.msf.cdn.mediaset.net/live/ch-i2/i2-clr.isml/manifest.mpd
-
-#EXTINF:-1,13 - Mediaset Extra
-https://live03-col.msf.cdn.mediaset.net/live/ch-kq/kq-clr.isml/manifest.mpd
-
-#EXTINF:-1,14 - TGCOM24
-https://live03-col.msf.cdn.mediaset.net/live/ch-kf/kf-clr.isml/manifest.mpd
-
-#EXTINF:-1,15 - Cartoonito
-https://live03-col.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/manifest.mpd
-
-#EXTINF:-1,16 - Radio Montecarlo TV TEST DASH
-https://live03-col.msr.cdn.mediaset.net/live/ch-bb/bb-clr.isml/manifest.mpd
-
-#EXTINF:-1,17 - Radio 105 TV TEST DASH
-https://live03-col.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/manifest.mpd
-
-#EXTINF:-1,18 - R101 TV TEST DASH
-https://live03-col.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/manifest.mpd
-
-#EXTINF:-1,19 - Virgin Radio TV TEST DASH
-https://live03-col.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/manifest.mpd
-
-#EXTINF:-1,20 - TV 12 FVG TEST
-https://59d7d6f47d7fc.streamlock.net/tv12/tv12/playlist.m3u8
