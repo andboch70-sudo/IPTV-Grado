@@ -47,3 +47,12 @@ https://live03-col.msf.cdn.mediaset.net/live/ch-la/la-clr.isml/manifest.mpd
 
 #EXTINF:-1,16 - Radio Montecarlo TV TEST DASH
 https://live03-col.msr.cdn.mediaset.net/live/ch-bb/bb-clr.isml/manifest.mpd
+
+#EXTINF:-1,17 - Radio 105 TV TEST DASH
+https://live03-col.msr.cdn.mediaset.net/live/ch-ec/ec-clr.isml/manifest.mpd
+
+#EXTINF:-1,18 - R101 TV TEST DASH
+https://live03-col.msr.cdn.mediaset.net/live/ch-er/er-clr.isml/manifest.mpd
+
+#EXTINF:-1,19 - Virgin Radio TV TEST DASH
+https://live03-col.msr.cdn.mediaset.net/live/ch-ew/ew-clr.isml/manifest.mpd
