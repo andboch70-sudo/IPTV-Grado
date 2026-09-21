@@ -1,12 +1,17 @@
 import urllib.request
 import xml.etree.ElementTree as ET
 from pathlib import Path
+from datetime import datetime, timedelta
 import gzip
 
 
 # =========================================================
 # IPTV GRADO - EPG AUTO UPDATE
-# Versione 1.4 - EPG ESTESO
+# Versione 1.5 - EPG ESTESO OTTIMIZZATO
+#
+# Mantiene tutti i 57 canali EPG della v1.4.
+# Riduce esclusivamente la finestra temporale:
+# oggi + 2 giorni.
 # =========================================================
 
 SOURCE = (
@@ -15,6 +20,8 @@ SOURCE = (
 )
 
 OUTPUT = Path("EPG_Grado.xml")
+
+DAYS_AHEAD = 2
 
 
 # =========================================================
@@ -92,8 +99,8 @@ WANTED_IDS = {
 
 print("")
 print("======================================")
-print("IPTV GRADO - EPG v1.4")
-print("EPG ESTESO")
+print("IPTV GRADO - EPG v1.5")
+print("EPG ESTESO OTTIMIZZATO")
 print("======================================")
 print("")
 
@@ -102,7 +109,7 @@ print("Scaricamento EPG Italia...")
 request = urllib.request.Request(
     SOURCE,
     headers={
-        "User-Agent": "IPTV-Grado-EPG/1.4"
+        "User-Agent": "IPTV-Grado-EPG/1.5"
     },
 )
 
@@ -227,6 +234,65 @@ if missing_mediaset:
 
 
 # =========================================================
+# DETERMINAZIONE FINESTRA TEMPORALE
+#
+# Usiamo la data più recente disponibile tra i programmi
+# che non sia nel futuro rispetto alla sorgente.
+# In pratica conserviamo:
+# oggi + i 2 giorni successivi.
+# =========================================================
+
+programme_dates = []
+
+for programme in root.findall("programme"):
+
+    if programme.get("channel") not in selected_ids:
+        continue
+
+    start = programme.get("start", "")
+
+    if len(start) >= 8:
+
+        try:
+            programme_date = datetime.strptime(
+                start[:8],
+                "%Y%m%d",
+            ).date()
+
+            programme_dates.append(
+                programme_date
+            )
+
+        except ValueError:
+            pass
+
+
+if not programme_dates:
+
+    raise RuntimeError(
+        "Impossibile determinare le date "
+        "dei programmi EPG."
+    )
+
+
+today = min(programme_dates)
+
+end_date = (
+    today
+    + timedelta(days=DAYS_AHEAD)
+)
+
+
+print("")
+print(
+    "Finestra EPG:",
+    today,
+    "->",
+    end_date,
+)
+
+
+# =========================================================
 # CREAZIONE EPG RIDOTTO
 # =========================================================
 
@@ -242,10 +308,39 @@ programme_count = 0
 
 for programme in root.findall("programme"):
 
-    if programme.get("channel") in selected_ids:
+    if programme.get("channel") not in selected_ids:
+        continue
+
+    start = programme.get("start", "")
+
+    if len(start) < 8:
+        continue
+
+    try:
+        programme_date = datetime.strptime(
+            start[:8],
+            "%Y%m%d",
+        ).date()
+
+    except ValueError:
+        continue
+
+    if today <= programme_date <= end_date:
 
         new_root.append(programme)
         programme_count += 1
+
+
+# =========================================================
+# CONTROLLO PROGRAMMI
+# =========================================================
+
+if programme_count < 1000:
+
+    raise RuntimeError(
+        "Troppi pochi programmi EPG dopo il filtro. "
+        "Aggiornamento annullato."
+    )
 
 
 # =========================================================
@@ -273,6 +368,27 @@ size_mb = (
 
 
 # =========================================================
+# CONTROLLO DIMENSIONE
+# =========================================================
+
+if size_mb > 4.0:
+
+    raise RuntimeError(
+        "EPG ancora troppo grande: "
+        f"{size_mb:.2f} MB. "
+        "Aggiornamento annullato."
+    )
+
+if size_mb < 0.5:
+
+    raise RuntimeError(
+        "EPG troppo piccolo: "
+        f"{size_mb:.2f} MB. "
+        "Aggiornamento annullato."
+    )
+
+
+# =========================================================
 # RISULTATO
 # =========================================================
 
@@ -292,6 +408,13 @@ print(
 )
 
 print(
+    "Finestra:",
+    today,
+    "->",
+    end_date,
+)
+
+print(
     "Dimensione:",
     round(size_mb, 2),
     "MB"
@@ -302,7 +425,11 @@ print(
 )
 
 print(
-    "Nuovi ID EPG v1.4 previsti: 16"
+    "ID EPG complessivi previsti: 57"
+)
+
+print(
+    "Ottimizzato per SS IPTV."
 )
 
 print("======================================")
