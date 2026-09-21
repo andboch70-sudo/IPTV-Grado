@@ -48,7 +48,29 @@ jobs:
             exit 1
           fi
 
-          echo "EPG verificato correttamente."
+          echo "EPG principale verificato correttamente."
+
+      - name: Genera EPG TEST
+        run: python scripts/update_epg_test.py
+
+      - name: Verifica EPG TEST
+        shell: bash
+        run: |
+          if [ ! -s EPG_Grado_TEST.xml ]; then
+            echo "ERRORE: EPG_Grado_TEST.xml è vuoto o non esiste."
+            exit 1
+          fi
+
+          TEST_SIZE=$(stat -c%s EPG_Grado_TEST.xml)
+
+          echo "Dimensione EPG TEST: $TEST_SIZE bytes"
+
+          if [ "$TEST_SIZE" -lt 1000 ]; then
+            echo "ERRORE: EPG TEST troppo piccolo."
+            exit 1
+          fi
+
+          echo "EPG TEST verificato correttamente."
 
       - name: Pubblica aggiornamenti
         shell: bash
@@ -56,7 +78,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add IPTV_Grado_Full_v1.0.m3u EPG_Grado.xml
+          git add IPTV_Grado_Full_v1.0.m3u EPG_Grado.xml EPG_Grado_TEST.xml
 
           if git diff --cached --quiet; then
             echo "Nessun aggiornamento necessario."
