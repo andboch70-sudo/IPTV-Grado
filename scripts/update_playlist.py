@@ -5,8 +5,8 @@ import re
 
 # =========================================================
 # IPTV GRADO - SAFE AUTO UPDATE
-# Versione 2.8
-# 15 MEDIASET DASH + EPG ESTESO
+# Versione 2.9
+# MEDIASET DASH + RADIO MEDIASET DASH + EPG ESTESO
 # Hisense VIDAA / SS IPTV
 # =========================================================
 
@@ -98,6 +98,46 @@ MEDIASET_DASH = {
 
 
 # =========================================================
+# RADIO MEDIASET DASH
+#
+# Verificati direttamente su Hisense VIDAA / SS IPTV.
+# Sostituiscono gli HLS live02-seg che causavano freeze.
+# =========================================================
+
+RADIO_MEDIASET_DASH = {
+
+    "Radio Montecarlo TV":
+        "https://live03-col.msr.cdn.mediaset.net/"
+        "live/ch-bb/bb-clr.isml/manifest.mpd",
+
+    "Radio 105 TV":
+        "https://live03-col.msr.cdn.mediaset.net/"
+        "live/ch-ec/ec-clr.isml/manifest.mpd",
+
+    "R101 TV":
+        "https://live03-col.msr.cdn.mediaset.net/"
+        "live/ch-er/er-clr.isml/manifest.mpd",
+
+    "Virgin Radio TV":
+        "https://live03-col.msr.cdn.mediaset.net/"
+        "live/ch-ew/ew-clr.isml/manifest.mpd",
+}
+
+
+# =========================================================
+# TV 12 FVG
+#
+# Verificato direttamente su Hisense VIDAA / SS IPTV.
+# Sostituisce Tele Pordenone.
+# =========================================================
+
+TV12_URL = (
+    "https://59d7d6f47d7fc.streamlock.net/"
+    "tv12/tv12/playlist.m3u8"
+)
+
+
+# =========================================================
 # EPG IDs
 # =========================================================
 
@@ -150,7 +190,7 @@ EPG_IDS = {
     "R101 TV": "R101tv.it",
     "Deejay TV": "Deejay.TV.it",
 
-    # NUOVI EPG v2.8
+    # EPG ESTESO
     "La7": "LA7.HD.it",
     "TV8": "TV8.HD.it",
     "Giallo": "Giallo.TV.it",
@@ -171,13 +211,14 @@ EPG_IDS = {
 
 
 # =========================================================
-# BLOCCO VECCHI STREAM MEDIASET
+# BLOCCO STREAM INCOMPATIBILI
 # =========================================================
 
 BLOCKED = (
     "live02-seg.msf.cdn.mediaset.net",
     "live2-mediaset-it.akamaized.net",
     "live3-mediaset-it.akamaized.net",
+    "live02-seg.msr.cdn.mediaset.net",
 )
 
 
@@ -272,9 +313,10 @@ WANTED = [
     "Radio m2o Tv",
     "Radio Norba Tv",
 
+    # FVG
     "Tele Quattro Trieste",
     "Tele Friuli",
-    "Tele Pordenone",
+    "TV 12 FVG",
     "Ran Friul",
     "Videotelecarnia",
 ]
@@ -299,7 +341,7 @@ def download():
     request = urllib.request.Request(
         SOURCE,
         headers={
-            "User-Agent": "IPTV-Grado/2.8"
+            "User-Agent": "IPTV-Grado/2.9"
         },
     )
 
@@ -382,8 +424,7 @@ def stream_score(url):
 
     score = 0
 
-    # Fondamentale:
-    # preserviamo Rai Mediapolis
+    # Preserviamo Rai Mediapolis
     if "mediapolis.rai.it/relinker" in lower:
         score += 100
 
@@ -462,8 +503,8 @@ def add_epg_id(
 
 print("")
 print("======================================")
-print("IPTV GRADO v2.8")
-print("15 MEDIASET DASH + EPG ESTESO")
+print("IPTV GRADO v2.9")
+print("DASH STABILE + EPG ESTESO + TV 12 FVG")
 print("======================================")
 print("")
 
@@ -535,7 +576,7 @@ output = [
 
     (
         "#PLAYLIST:IPTV Grado - "
-        "Stable v2.8 + 15 Mediaset DASH + EPG esteso"
+        "Stable v2.9 + DASH + EPG esteso + TV 12 FVG"
     ),
 
     (
@@ -550,6 +591,7 @@ added = set()
 count = 0
 epg_count = 0
 mediaset_count = 0
+radio_mediaset_count = 0
 
 
 # =========================================================
@@ -563,9 +605,9 @@ for requested_name in WANTED:
     )
 
 
-    # MEDIASET:
-    # sempre DASH verificati direttamente
-    # sulla Hisense.
+    # -----------------------------------------------------
+    # MEDIASET TV DASH
+    # -----------------------------------------------------
 
     if requested_name in MEDIASET_DASH:
 
@@ -596,7 +638,70 @@ for requested_name in WANTED:
         continue
 
 
+    # -----------------------------------------------------
+    # RADIO MEDIASET DASH
+    # -----------------------------------------------------
+
+    if requested_name in RADIO_MEDIASET_DASH:
+
+        url = RADIO_MEDIASET_DASH[
+            requested_name
+        ]
+
+        info = build_info(
+            requested_name
+        )
+
+        output.append(info)
+        output.append(url)
+
+        added.add(normalized)
+
+        count += 1
+        radio_mediaset_count += 1
+
+        if requested_name in EPG_IDS:
+            epg_count += 1
+
+        print(
+            "RADIO MEDIASET DASH:",
+            requested_name,
+            url,
+        )
+
+        continue
+
+
+    # -----------------------------------------------------
+    # TV 12 FVG
+    # -----------------------------------------------------
+
+    if requested_name == "TV 12 FVG":
+
+        info = (
+            "#EXTINF:-1 "
+            'group-title="FVG",'
+            "TV 12 FVG"
+        )
+
+        output.append(info)
+        output.append(TV12_URL)
+
+        added.add(normalized)
+
+        count += 1
+
+        print(
+            "TV 12 FVG:",
+            TV12_URL,
+        )
+
+        continue
+
+
+    # -----------------------------------------------------
     # ALTRI CANALI
+    # -----------------------------------------------------
 
     available = candidates.get(
         normalized,
@@ -690,6 +795,14 @@ if mediaset_count != 15:
     )
 
 
+if radio_mediaset_count != 4:
+
+    raise RuntimeError(
+        "Errore: non sono stati inseriti "
+        "tutti i 4 RadioMediaset DASH."
+    )
+
+
 # =========================================================
 # SCRITTURA
 # =========================================================
@@ -714,13 +827,13 @@ print(
 )
 
 print(
-    "Mediaset DASH inseriti:",
+    "Mediaset TV DASH inseriti:",
     mediaset_count,
 )
 
 print(
-    "Mediaset con EPG:",
-    15,
+    "RadioMediaset DASH inseriti:",
+    radio_mediaset_count,
 )
 
 print(
@@ -733,7 +846,11 @@ print(
 )
 
 print(
-    "Mediaset: DASH live03-col."
+    "Mediaset TV: DASH live03-col msf."
+)
+
+print(
+    "RadioMediaset: DASH live03-col msr."
 )
 
 print(
@@ -741,11 +858,19 @@ print(
 )
 
 print(
+    "Tele Pordenone rimosso."
+)
+
+print(
+    "TV 12 FVG inserito."
+)
+
+print(
     "EPG Grado integrato ed esteso."
 )
 
 print(
-    "Versione stabile 2.8."
+    "Versione 2.9."
 )
 
 print("======================================")
