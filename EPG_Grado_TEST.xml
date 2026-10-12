@@ -92,11 +92,13 @@
     <title lang="it">Dalla Parte Degli Animali</title>
     <desc lang="it">Tante storie con protagonisti i nostri amici a quattro zampe. Conduce Vittoria Brambilla.</desc>
     <category lang="it">Lifestyle</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706101000501/media/15/15/b026ed78-6315-4024-92a8-ffca42e5f67b/5a11fb44-a58d-4f31-9f8b-9b96261e736d.jpg" />
   </programme>
   <programme start="20261011100000 +0000" stop="20261011102700 +0000" channel="Rete.4.it">
     <title lang="it">Tg4</title>
     <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
     <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501056701/media/14/14/2253e3d9-c813-45c8-9fad-1ae89bbc832e/c29d5b04-e348-422d-b72f-41b2c3adf6be.jpg" />
   </programme>
   <programme start="20261011102700 +0000" stop="20261011115800 +0000" channel="Rete.4.it">
     <title lang="it">La Signora In Giallo</title>
@@ -125,6 +127,7 @@
     <title lang="it">Diario Del Weekend</title>
     <desc lang="it">Approfondimento a cura del Tg4 sui principali fatti del giorno.</desc>
     <category lang="it">Informazione</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314745101001201/media/19/83/8d0748dc-4df7-4af9-8837-e3e7d81dde11/7706072b-c9c3-4242-8928-c253e06eaba1.jpg" />
   </programme>
   <programme start="20261011143400 +0000" stop="20261011165800 +0000" channel="Rete.4.it">
     <title lang="it">Qualcosa Di Cui... Sparlare</title>
@@ -141,6 +144,7 @@
     <title lang="it">Tg4</title>
     <desc lang="it">Informazione quotidiana con le notizie dall'Italia e dal mondo per il telegiornale di Rete 4. A seguire, le previsioni metereologiche.</desc>
     <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314232501056801/media/14/14/2253e3d9-c813-45c8-9fad-1ae89bbc832e/c29d5b04-e348-422d-b72f-41b2c3adf6be.jpg" />
   </programme>
   <programme start="20261011174100 +0000" stop="20261011183000 +0000" channel="Rete.4.it">
     <title lang="it">La Promessa</title>
@@ -481,6 +485,7 @@
     <title lang="it">Dalla Parte Degli Animali</title>
     <desc lang="it">Tante storie con protagonisti i nostri amici a quattro zampe. Conduce Vittoria Brambilla.</desc>
     <category lang="it">Lifestyle</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314706101000501/media/15/15/b026ed78-6315-4024-92a8-ffca42e5f67b/5a11fb44-a58d-4f31-9f8b-9b96261e736d.jpg" />
   </programme>
   <programme start="20261014003600 +0000" stop="20261014005400 +0000" channel="Rete.4.it">
     <title lang="it">Tg4 Ultima Ora Notte</title>
@@ -750,13 +755,15 @@
   </programme>
   <programme start="20261011102500 +0000" stop="20261011110600 +0000" channel="Italia.1.it">
     <title lang="it">Studio Aperto</title>
-    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualità quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
     <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201056701/media/22/86/25d1ac74-e1c1-40a2-a193-dbd91d5b902b/95f89685-4ca2-4d68-98e1-fbd7f8036efc.jpg" />
   </programme>
   <programme start="20261011110600 +0000" stop="20261011120200 +0000" channel="Italia.1.it">
     <title lang="it">Sport Mediaset</title>
     <desc lang="it">Approfondimento in diretta sul mondo del calcio e dello sport a cura della redazione giornalistica di Sport Mediaset.</desc>
     <category lang="it">Calcio</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314666401000601/media/16/80/cc9db088-5c94-45ec-aa0d-60345e755e98/1174620c-e23f-467a-8257-7a4f911932f1.jpg" />
     <episode-num system="onscreen">SXXL</episode-num>
   </programme>
   <programme start="20261011120200 +0000" stop="20261011123200 +0000" channel="Italia.1.it">
@@ -808,13 +815,15 @@
   </programme>
   <programme start="20261011163000 +0000" stop="20261011165600 +0000" channel="Italia.1.it">
     <title lang="it">Studio Aperto</title>
-    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <desc lang="it">Segui tutte le notizie dell'edizione integrale di Studio Aperto.</desc>
     <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217201056801/media/22/86/25d1ac74-e1c1-40a2-a193-dbd91d5b902b/95f89685-4ca2-4d68-98e1-fbd7f8036efc.jpg" />
   </programme>
   <programme start="20261011165600 +0000" stop="20261011172200 +0000" channel="Italia.1.it">
     <title lang="it">Studio Aperto Mag</title>
-    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualita' quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
+    <desc lang="it">Notizie e approfondimenti in diretta sui temi di attualità quotidiani a cura della redazione giornalistica di Studio Aperto.</desc>
     <category lang="it">Magazine</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314217801028401/media/2/2/9bac4643-370c-4bab-a6fb-fd11c0d9b542/4ba4406d-336c-4c02-b388-f03c0d635a7b.jpg" />
   </programme>
   <programme start="20261011172200 +0000" stop="20261011182600 +0000" channel="Italia.1.it">
     <title lang="it">C.s.i. Scena Del Crimine</title>
@@ -1666,13 +1675,15 @@
   </programme>
   <programme start="20261011091400 +0000" stop="20261011092600 +0000" channel="Canale.5.it">
     <title lang="it">Melaverde Le Storie (domenica)</title>
-    <desc lang="it">Approfondimenti e curiosita' su luoghi, ricette, antichi e nuovi mestieri di ogni regione italiana in compagnia di Ellen Hidding.</desc>
+    <desc lang="it">Approfondimenti e curiosità su luoghi, ricette, antichi e nuovi mestieri di ogni regione italiana in compagnia di Ellen Hidding.</desc>
     <category lang="it">Cucina</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314260202000701/media/22/86/ff8739f4-03ee-4073-b715-94068c0c1f7d/c38bf2ac-94ab-43b8-bc8d-9f7f3a24f7f8.jpg" />
   </programme>
   <programme start="20261011092600 +0000" stop="20261011094900 +0000" channel="Canale.5.it">
     <title lang="it">Melaverde Le Storie</title>
-    <desc lang="it">Approfondimenti e curiosita' su luoghi, ricette, antichi e nuovi mestieri di ogni regione italiana in compagnia di Ellen Hidding.</desc>
+    <desc lang="it">Approfondimenti e curiosità su luoghi, ricette, antichi e nuovi mestieri di ogni regione italiana in compagnia di Ellen Hidding.</desc>
     <category lang="it">Cucina</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314260201008201/media/22/86/ff8739f4-03ee-4073-b715-94068c0c1f7d/c38bf2ac-94ab-43b8-bc8d-9f7f3a24f7f8.jpg" />
   </programme>
   <programme start="20261011094900 +0000" stop="20261011105500 +0000" channel="Canale.5.it">
     <title lang="it">Melaverde</title>
@@ -1684,6 +1695,7 @@
     <title lang="it">Tg5</title>
     <desc lang="it">Le notizie piu' importanti, nazionali e internazionali, con approfondimenti e rubriche, a cura della redazione giornalistica di Canale 5.</desc>
     <category lang="it">Telegiornale</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314202201113401/media/19/83/3dc5f120-5a3a-4ed3-90eb-883869171206/d613152c-6f9a-4ed8-93f7-eff523eccf2e.jpg" />
   </programme>
   <programme start="20261011113700 +0000" stop="20261011120000 +0000" channel="Canale.5.it">
     <title lang="it">L'arca Di Noe'</title>
@@ -1693,13 +1705,15 @@
   </programme>
   <programme start="20261011120000 +0000" stop="20261011141500 +0000" channel="Canale.5.it">
     <title lang="it">Amici Di Maria</title>
-    <desc lang="it">La scuola di Amici riapre per la 26ª edizione: aspiranti cantanti, ballerini ed atleti si sfidano per entrare nella scuola e vivere il percorso che porta alla fase serale. Con Maria De Filippi.</desc>
+    <desc lang="it">Due banchi assegnati, le esibizioni per ottenere la maglia. Ospiti in studio Erocaddeo e Lorenzo Salvetti.</desc>
     <category lang="it">Talent show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314749701000101/media/16/80/6a953762-54e9-421b-8589-50251657dc8d/fce7bfad-c275-4e0e-b4ce-42d51e60c739.jpg" />
   </programme>
   <programme start="20261011141500 +0000" stop="20261011164300 +0000" channel="Canale.5.it">
     <title lang="it">Verissimo</title>
-    <desc lang="it">Tra gli ospiti di Silvia Toffanin, Giorgia Palmas e Filippo Magnini presto nuovamente genitori. In studio anche Cristel e Romina Carrisi.</desc>
+    <desc lang="it">Gli ospiti del salotto di Silvia Toffanin sono: Cristel e Romina Carrisi, Gianluigi Nuzzi, Sofia Donadio e Francesca Nota, le ragazze di Crans Montana, Selvaggia Lucarelli, Giorgia Palmas e Filippo Magnini.</desc>
     <category lang="it">Talk Show</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314717301000801/media/9/9/88fd1279-28e6-4175-9334-72b8a0b4c7b1/6c2d2ef6-35c9-4439-bb90-e1761f10a658.jpg" />
   </programme>
   <programme start="20261011164300 +0000" stop="20261011175400 +0000" channel="Canale.5.it">
     <title lang="it">Caduta Libera</title>
@@ -1718,8 +1732,10 @@
   </programme>
   <programme start="20261011183900 +0000" stop="20261011192000 +0000" channel="Canale.5.it">
     <title lang="it">La Ruota Della Fortuna</title>
-    <desc lang="it">Gerry Scotti, Samira e la ruota piu' famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo.</desc>
+    <desc lang="it">Gerry Scotti, Samira e la ruota più famosa della tv! I concorrenti devono scoprire le frasi nascoste. Serve bravura ma la fortuna ci mette del suo.</desc>
     <category lang="it">Varietà</category>
+    <category lang="it">Quiz</category>
+    <icon src="https://static2.mediasetplay.mediaset.it/Mediaset_Italia_Production_-_Main/F314328601027501/media/4/4/77dcc94c-1818-45d2-90ff-197627c10082/3475d75f-361d-485c-965f-b7fddc3b8d47.jpg" />
   </programme>
   <programme start="20261011192000 +0000" stop="20261011192100 +0000" channel="Canale.5.it">
     <title lang="it">Riassunto Racconto Di Una Notte</title>
@@ -2391,9 +2407,16 @@
   <programme start="20261011070500 +0200" stop="20261011080000 +0200" channel="Rai1.it">
     <title lang="it">Unomattina in famiglia</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana.</desc>
-    <date>2019</date>
+    <desc lang="it">Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana. Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana.</desc>
+    <credits>
+      <director>Alessandra De Sanctis</director>
+      <presenter>Monica Setta</presenter>
+      <presenter>Ingrid Muccitelli</presenter>
+    </credits>
+    <date>2027</date>
+    <category lang="it">Talk Show</category>
     <icon src="https://www.raiplay.it/dl/img/2023/09/11/1694449777082_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011080000 +0200" stop="20261011081800 +0200" channel="Rai1.it">
     <title lang="it">Tg1</title>
@@ -2404,9 +2427,16 @@
   <programme start="20261011081800 +0200" stop="20261011090000 +0200" channel="Rai1.it">
     <title lang="it">Unomattina in famiglia</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana.</desc>
-    <date>2019</date>
+    <desc lang="it">Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana. Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana.</desc>
+    <credits>
+      <director>Alessandra De Sanctis</director>
+      <presenter>Monica Setta</presenter>
+      <presenter>Ingrid Muccitelli</presenter>
+    </credits>
+    <date>2027</date>
+    <category lang="it">Talk Show</category>
     <icon src="https://www.raiplay.it/dl/img/2023/09/11/1694449777082_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011090000 +0200" stop="20261011090400 +0200" channel="Rai1.it">
     <title lang="it">Tg1</title>
@@ -2417,94 +2447,153 @@
   <programme start="20261011090400 +0200" stop="20261011092500 +0200" channel="Rai1.it">
     <title lang="it">Unomattina in famiglia</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana.</desc>
-    <date>2019</date>
+    <desc lang="it">Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana. Il buongiorno di Monica Setta, Beppe Convertini e Ingrid Muccitelli che commentano con gli ospiti l'attualità e i fatti di cronaca più importanti della settimana.</desc>
+    <credits>
+      <director>Alessandra De Sanctis</director>
+      <presenter>Monica Setta</presenter>
+      <presenter>Ingrid Muccitelli</presenter>
+    </credits>
+    <date>2027</date>
+    <category lang="it">Talk Show</category>
     <icon src="https://www.raiplay.it/dl/img/2023/09/11/1694449777082_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011092500 +0200" stop="20261011093000 +0200" channel="Rai1.it">
     <title lang="it">TG1 LIS</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2023/03/31/1680272500388_TG1_LIS_per_RaiPlay_ORIZZONTALE.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011093000 +0200" stop="20261011101500 +0200" channel="Rai1.it">
     <title lang="it">Check Up</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Luana Ravegnini approfondisce i principali temi legati alla salute e alla prevenzione. Dall'infarto e l'importanza di riconoscerne i sintomi ai disturbi dell'anca e al glaucoma. Spazio anche all'alimentazione, alle patologie gastrointestinali, ai cambiamenti legati all'invecchiamento e alle diverse forme di dolore, con il contributo di medici e specialisti.</desc>
-    <date>2019</date>
+    <desc lang="it">Luana Ravegnini approfondisce i principali temi legati alla salute e alla prevenzione. Dall'infarto e l'importanza di riconoscerne i sintomi ai disturbi dell'anca e al glaucoma. Spazio anche all'alimentazione, alle patologie gastrointestinali, ai cambiamenti legati all'invecchiamento e alle diverse forme di dolore, con il contributo di medici e specialisti. Luana Ravegnini approfondisce i principali temi legati alla salute e alla prevenzione. Dall'infarto e l'importanza di riconoscerne i sintomi ai disturbi dell'anca e al glaucoma. Spazio anche all'alimentazione, alle patologie gastrointestinali, ai cambiamenti legati all'invecchiamento e alle diverse forme di dolore, con il contributo di medici e specialisti.</desc>
+    <credits>
+      <presenter>Luana Ravegnini</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2026/10/09/1791558701409_21707.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011101500 +0200" stop="20261011105500 +0200" channel="Rai1.it">
     <title lang="it">A Sua immagine</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Lorena Bianchetti ricorda San Giovanni XXIII, il "Papa buono", ripercorrendo il suo pontificato, dal Concilio Vaticano II all'impegno per la pace. In studio Marco Roncalli, Agostino Giovagnoli e don Ezio Bolis. Spazio anche alla rubrica "Chiesa in viaggio", con un approfondimento sul santuario della Beata Vergine di San Luca a Bologna. A seguire, la Santa Messa dalla Cattedrale di Sulmona e l'Angelus di Papa Leone XIV.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2026/10/05/1791187507306_1788614209165_1774802239757_A%20sua%20immagine.jpg" />
+    <desc lang="it">Lorena Bianchetti ricorda San Giovanni XXIII, il "Papa buono", ripercorrendo il suo pontificato, dal Concilio Vaticano II all'impegno per la pace. In studio Marco Roncalli, Agostino Giovagnoli e don Ezio Bolis. Spazio anche alla rubrica "Chiesa in viaggio", con un approfondimento sul santuario della Beata Vergine di San Luca a Bologna. A seguire, la Santa Messa dalla Cattedrale di Sulmona e l'Angelus di Papa Leone XIV. Lorena Bianchetti ricorda San Giovanni XXIII, il \"Papa buono\.</desc>
+    <credits>
+      <director>Gaia Valeria Rosa</director>
+      <presenter>Lorena Bianchetti</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Religioso</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735108146_1791735104526.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011105500 +0200" stop="20261011115000 +0200" channel="Rai1.it">
     <title lang="it">Santa Messa</title>
     <sub-title lang="it">Santa Messa dalla Cattedrale di Sulmona (L'Aquila) - 11/10/2026</sub-title>
-    <desc lang="it">Santa Messa dalla Cattedrale di Sulmona (L'Aquila). Regia di Simone Chiappetta. Commento liturgico di Orazio Coclite.</desc>
-    <date>2019</date>
+    <desc lang="it">Santa Messa dalla Cattedrale di Sulmona (L'Aquila). Regia di Simone Chiappetta. Commento liturgico di Orazio Coclite. Santa Messa dalla Cattedrale di Sulmona (L'Aquila). Regia di Simone Chiappetta. Commento liturgico di Orazio Coclite.</desc>
+    <date>2026</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2019/11/19/1574153990363_Santa%20Messa%202048x1152.jpg" />
+    <country lang="it">Italia</country>
     <episode-num system="onscreen">S2026</episode-num>
   </programme>
   <programme start="20261011115000 +0200" stop="20261011120000 +0200" channel="Rai1.it">
     <title lang="it">A Sua immagine</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Lorena Bianchetti ricorda San Giovanni XXIII, il "Papa buono", ripercorrendo il suo pontificato, dal Concilio Vaticano II all'impegno per la pace. In studio Marco Roncalli, Agostino Giovagnoli e don Ezio Bolis. Spazio anche alla rubrica "Chiesa in viaggio", con un approfondimento sul santuario della Beata Vergine di San Luca a Bologna. A seguire, la Santa Messa dalla Cattedrale di Sulmona e l'Angelus di Papa Leone XIV.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2026/10/05/1791187507306_1788614209165_1774802239757_A%20sua%20immagine.jpg" />
+    <desc lang="it">Lorena Bianchetti ricorda San Giovanni XXIII, il "Papa buono", ripercorrendo il suo pontificato, dal Concilio Vaticano II all'impegno per la pace. In studio Marco Roncalli, Agostino Giovagnoli e don Ezio Bolis. Spazio anche alla rubrica "Chiesa in viaggio", con un approfondimento sul santuario della Beata Vergine di San Luca a Bologna. A seguire, la Santa Messa dalla Cattedrale di Sulmona e l'Angelus di Papa Leone XIV. Lorena Bianchetti ricorda San Giovanni XXIII, il \"Papa buono\.</desc>
+    <credits>
+      <director>Gaia Valeria Rosa</director>
+      <presenter>Lorena Bianchetti</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Religioso</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735108146_1791735104526.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011120000 +0200" stop="20261011121000 +0200" channel="Rai1.it">
     <title lang="it">A Sua immagine</title>
     <sub-title lang="it">Recita dell'Angelus da Piazza San Pietro del 11/10/2026</sub-title>
-    <desc lang="it">L'Angelus recitato da Leone XIV dalla finestra del Palazzo Apostolico su Piazza San Pietro.</desc>
-    <date>2019</date>
+    <desc lang="it">L'Angelus recitato da Leone XIV dalla finestra del Palazzo Apostolico su Piazza San Pietro. L'Angelus recitato da Leone XIV dalla finestra del Palazzo Apostolico su Piazza San Pietro.</desc>
+    <credits>
+      <director>Gaia Valeria Rosa</director>
+      <presenter>Lorena Bianchetti</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Religioso</category>
     <icon src="https://www.raiplay.it/dl/img/2025/08/21/1755783584044_Angelus-San-Pietro-2048x1152.jpg" />
+    <country lang="it">Italia</country>
     <episode-num system="onscreen">S2026</episode-num>
   </programme>
   <programme start="20261011121000 +0200" stop="20261011122000 +0200" channel="Rai1.it">
     <title lang="it">A Sua immagine</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Lorena Bianchetti ricorda San Giovanni XXIII, il "Papa buono", ripercorrendo il suo pontificato, dal Concilio Vaticano II all'impegno per la pace. In studio Marco Roncalli, Agostino Giovagnoli e don Ezio Bolis. Spazio anche alla rubrica "Chiesa in viaggio", con un approfondimento sul santuario della Beata Vergine di San Luca a Bologna. A seguire, la Santa Messa dalla Cattedrale di Sulmona e l'Angelus di Papa Leone XIV.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2026/10/05/1791187507306_1788614209165_1774802239757_A%20sua%20immagine.jpg" />
+    <desc lang="it">Lorena Bianchetti ricorda San Giovanni XXIII, il "Papa buono", ripercorrendo il suo pontificato, dal Concilio Vaticano II all'impegno per la pace. In studio Marco Roncalli, Agostino Giovagnoli e don Ezio Bolis. Spazio anche alla rubrica "Chiesa in viaggio", con un approfondimento sul santuario della Beata Vergine di San Luca a Bologna. A seguire, la Santa Messa dalla Cattedrale di Sulmona e l'Angelus di Papa Leone XIV. Lorena Bianchetti ricorda San Giovanni XXIII, il \"Papa buono\.</desc>
+    <credits>
+      <director>Gaia Valeria Rosa</director>
+      <presenter>Lorena Bianchetti</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Religioso</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735108146_1791735104526.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011122000 +0200" stop="20261011133000 +0200" channel="Rai1.it">
     <title lang="it">Linea Verde</title>
     <sub-title lang="it">The Ciociaria - 11/10/2026</sub-title>
-    <desc lang="it">Peppone Calabrese, Fabio Gallo e Margherita Granbassi, attraversano la Ciociaria, precisamente la Valle di Comino. Dal Lago di Posta Fibreno a Picinisco, il tema del viaggio punta a far emergere la doppia anima di questo tratto di Ciociaria: da un lato la dimensione agricola pastorale; Dall'altro lato invece, un respiro internazionale, poco conosciuto, innescato da una serie di fattori determinanti, anzitutto quelli legati alle grandi emigrazioni della seconda metà dell'Ottocento. Peppone, nell'incontro con pastori, casari, agricoltori, artigiani fa emergere l'anima più strettamente contadina della valle che ha saputo far parlare di sé grazie al Pecorino, al Fagiolo Cannellino di Atina e ad una piccola gelateria di Picinisco che fa un solo gusto di gelato, quello alla crema inglese. Storie di terra, di uomini e di donne che ci aiutano a scoprire i segreti di un luogo poco conosciuto che ha attratto i viaggiatori del Grand Tour nell'800 e grandi scrittori come D. H. Lawrence che ha ambientato proprio a Picinisco uno dei suoi romanzi più conosciuti "La ragazza perduta". Fabio invece approfondisce le storie più internazionali: c'è chi dopo una vita in Scozia è rientrato per recuperare le vigne dei nonni, chi ha puntato sulla ristorazione ma soprattutto racconta le storie dei ragazzi e delle ragazze ciociare che, alla fine dell'800 lasciavano i pascoli e le campagne per andare a posare per i più grandi pittori e scultori d'Europa come modelli. Margherita invece indaga gli aspetti più legati alla musica ciociara itinerante, che ha girato il mondo con le sue sonorità pastorali di ciaramelle e zampogne. Infine, un grande pranzo della domenica a Villa Lawrence, la dimora rurale che porta il nome dello scrittore inglese.</desc>
-    <date>2019</date>
+    <desc lang="it">Peppone Calabrese, Fabio Gallo e Margherita Granbassi, attraversano la Ciociaria, precisamente la Valle di Comino. Dal Lago di Posta Fibreno a Picinisco, il tema del viaggio punta a far emergere la doppia anima di questo tratto di Ciociaria: da un lato la dimensione agricola pastorale; Dall'altro lato invece, un respiro internazionale, poco conosciuto, innescato da una serie di fattori determinanti, anzitutto quelli legati alle grandi emigrazioni della seconda metà dell'Ottocento. Peppone, nell'incontro con pastori, casari, agricoltori, artigiani fa emergere l'anima più strettamente contadina della valle che ha saputo far parlare di sé grazie al Pecorino, al Fagiolo Cannellino di Atina e ad una piccola gelateria di Picinisco che fa un solo gusto di gelato, quello alla crema inglese. Storie di terra, di uomini e di donne che ci aiutano a scoprire i segreti di un luogo poco conosciuto che ha attratto i viaggiatori del Grand Tour nell'800 e grandi scrittori come D. H. Lawrence che ha ambientato proprio a Picinisco uno dei suoi romanzi più conosciuti "La ragazza perduta". Fabio invece approfondisce le storie più internazionali: c'è chi dopo una vita in Scozia è rientrato per recuperare le vigne dei nonni, chi ha puntato sulla ristorazione ma soprattutto racconta le storie dei ragazzi e delle ragazze ciociare che, alla fine dell'800 lasciavano i pascoli e le campagne per andare a posare per i più grandi pittori e scultori d'Europa come modelli. Margherita invece indaga gli aspetti più legati alla musica ciociara itinerante, che ha girato il mondo con le sue sonorità pastorali di ciaramelle e zampogne. Infine, un grande pranzo della domenica a Villa Lawrence, la dimora rurale che porta il nome dello scrittore inglese. Peppone Calabrese, Fabio Gallo e Margherita Granbassi, attraversano la Ciociaria, precisamente la Valle di Comino. Dal Lago di Posta Fibreno a Picinisco, il tema del viaggio punta a far emergere la doppia anima di questo tratto di Ciociaria: da un lato la dimensione agricola pastorale; Dall'altro lato invece, un respiro internazionale, poco conosciuto, innescato da una serie di fattori determinanti, anzitutto quelli legati alle grandi emigrazioni della seconda metà dell'Ottocento. Peppone, nell'incontro con pastori, casari, agricoltori, artigiani fa emergere l'anima più strettamente contadina della valle che ha saputo far parlare di sé grazie al Pecorino, al Fagiolo Cannellino di Atina e ad una piccola gelateria di Picinisco che fa un solo gusto di gelato, quello alla crema inglese. Storie di terra, di uomini e di donne che ci aiutano a scoprire i segreti di un luogo poco conosciuto che ha attratto i viaggiatori del Grand Tour nell'800 e grandi scrittori come D. H. Lawrence che ha ambientato proprio a Picinisco uno dei suoi romanzi più conosciuti \"La ragazza perduta\". Fabio invece approfondisce le storie più internazionali: c'è chi dopo una vita in Scozia è rientrato per recuperare le vigne dei nonni, chi ha puntato sulla ristorazione ma soprattutto racconta le storie dei ragazzi e delle ragazze ciociare che, alla fine dell'800 lasciavano i pascoli e le campagne per andare a posare per i più grandi pittori e scultori d'Europa come modelli. Margherita invece indaga gli aspetti più legati alla musica ciociara itinerante, che ha girato il mondo con le sue sonorità pastorali di ciaramelle e zampogne. Infine, un grande pranzo della domenica a Villa Lawrence, la dimora rurale che porta il nome dello scrittore inglese.</desc>
+    <credits>
+      <director>Daniele Carminati</director>
+      <presenter>Peppone</presenter>
+      <presenter>Margherita Granbassi</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Viaggi &amp; Avventure</category>
     <icon src="https://www.raiplay.it/dl/img/2026/10/10/1791585459195_1088.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011133000 +0200" stop="20261011140000 +0200" channel="Rai1.it">
     <title lang="it">Tg1</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2025/12/16/1765885004911_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011140000 +0200" stop="20261011171500 +0200" channel="Rai1.it">
     <title lang="it">Domenica In</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Mara Venier, la "signora della domenica", accoglie i protagonisti dell'attualità, i grandi nomi e i nuovi talenti dello spettacolo, per una domenica pomeriggio piena di allegria, ospiti, interviste, musica e storie di vita.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2026/09/25/1790324675855_2048x1152.jpg" />
+    <desc lang="it">Musica, cinema, spettacolo e attualità sono al centro della puntata di oggi di Domenica In con Mara Venier, affiancata da Tommaso Cerno ed Enzo Miccio. Ospite atteso Al Bano, che si racconta tra carriera e vita privata e si esibisce con alcuni dei suoi brani più amati. Spazio poi a Ballando con le Stelle, con diversi ospiti pronti a commentare la seconda puntata del programma, e al cinema con Rocco Papaleo e Giorgio Pasotti, che presentano "Sotto a chi tocca", e Massimiliano Caiazzo, protagonista di "Je so' pazzo", il film dedicato a Pino Daniele. Per l'attualità, in studio ci sono Leonardo Bove e Kean Talingdan, due dei ragazzi sopravvissuti alla tragedia di Crans-Montana, accompagnati dalle rispettive mamme. Non manca Il pranzo della domenica, con Savino Zaba in collegamento da Cellino San Marco, mentre la musica è affidata alla nuova band guidata da Timothy Cavicchini. Musica, cinema, spettacolo e attualità sono al centro della puntata di oggi di Domenica In con Mara Venier, affiancata da Tommaso Cerno ed Enzo Miccio. Ospite atteso Al Bano, che si racconta tra carriera e vita privata e si esibisce con alcuni dei suoi brani più amati. Spazio poi a Ballando con le Stelle, con diversi ospiti pronti a commentare la seconda puntata del programma, e al cinema con Rocco Papaleo e Giorgio Pasotti, che presentano \"Sotto a chi tocca\.</desc>
+    <credits>
+      <director>Mauro Stancati</director>
+      <presenter>Mara Venier</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Talk Show</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791726500986_1791726345938%201.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011171500 +0200" stop="20261011171800 +0200" channel="Rai1.it">
     <title lang="it">Tg1</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2025/12/16/1765885004911_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011171800 +0200" stop="20261011172000 +0200" channel="Rai1.it">
     <title lang="it">Che tempo fa</title>
-    <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2025/11/20/1763645586214_RaiMeteo2048x1152.png" />
   </programme>
   <programme start="20261011172000 +0200" stop="20261011184000 +0200" channel="Rai1.it">
     <title lang="it">Da noi... a ruota libera</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Francesca Fialdini racconta la vita artistica e privata di personaggi celebri e non che hanno saputo imprimere un "giro di ruota" originale e positivo alla propria vita e a quella degli altri compiendo scelte coraggiose e anticonvenzionali. Un percorso di emozioni, ricordi, riflessioni, momenti d'ironia e leggerezza.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2026/09/24/1790256093558_2048x1152.jpg" />
+    <desc lang="it">Francesca Fialdini racconta la vita artistica e privata di personaggi celebri e non che hanno saputo imprimere un "giro di ruota" originale e positivo alla propria vita e a quella degli altri compiendo scelte coraggiose e anticonvenzionali. Un percorso di emozioni, ricordi, riflessioni, momenti d'ironia e leggerezza. Francesca Fialdini racconta la vita artistica e privata di personaggi celebri e non che hanno saputo imprimere un \"giro di ruota\" originale e positivo alla propria vita e a quella degli altri compiendo scelte coraggiose e anticonvenzionali. Un percorso di emozioni, ricordi, riflessioni, momenti d'ironia e leggerezza.</desc>
+    <credits>
+      <director>Elisabetta Pierelli</director>
+      <presenter>Francesca Fialdini</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Talk Show</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735156155_1791735152262.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011184000 +0200" stop="20261011200000 +0200" channel="Rai1.it">
     <title lang="it">Reazione a catena</title>
@@ -2542,7 +2631,7 @@
   <programme start="20261011235000 +0200" stop="20261012010500 +0200" channel="Rai1.it">
     <title lang="it">Speciale Tg1</title>
     <sub-title lang="it">Cambio rotta: Undertourism - 11/10/2026</sub-title>
-    <desc lang="it">Settimanale del Tg1.</desc>
+    <desc lang="it">Il reportage di Valentina Bisti nell'Italia alle prese con il turismo di massa, tra località sempre più affollate e territori alla ricerca di un nuovo equilibrio tra accoglienza, tutela del paesaggio e qualità della vita dei residenti. Un reportage che racconta le misure adottate dalle amministrazioni locali per contenere i flussi turistici e valorizzare destinazioni meno conosciute. Dalle Dolomiti, tra il lago di Sorapis, le Tre Cime di Lavaredo e il monte Civetta, alle spiagge della Puglia e della Sicilia, il racconto attraversa alcuni dei luoghi più visitati del Paese, dove prenotazioni obbligatorie e accessi contingentati cercano di contrastare gli effetti del sovraffollamento. Spazio anche alle alternative al turismo tradizionale, dai borghi delle Dolomiti lucane ai percorsi naturalistici della Majella. Il viaggio prosegue tra la Baia del Silenzio a Sestri Levante, la spiaggia della Pelosa in Sardegna, le Cinque Terre e i paesaggi della Val d'Orcia. Attraverso le testimonianze di amministratori, esperti e operatori del settore, emerge una diversa idea di turismo, più attenta ai territori e alle comunità che li abitano.</desc>
     <date>2019</date>
     <icon src="https://www.raiplay.it/dl/img/2026/10/10/1791586110982_Thumb-EP.jpg" />
   </programme>
@@ -2556,9 +2645,15 @@
   <programme start="20261012023500 +0200" stop="20261012035000 +0200" channel="Rai1.it">
     <title lang="it">Da noi... a ruota libera</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Francesca Fialdini racconta la vita artistica e privata di personaggi celebri e non che hanno saputo imprimere un "giro di ruota" originale e positivo alla propria vita e a quella degli altri compiendo scelte coraggiose e anticonvenzionali. Un percorso di emozioni, ricordi, riflessioni, momenti d'ironia e leggerezza.</desc>
-    <date>2019</date>
+    <desc lang="it">Francesca Fialdini racconta la vita artistica e privata di personaggi celebri e non che hanno saputo imprimere un "giro di ruota" originale e positivo alla propria vita e a quella degli altri compiendo scelte coraggiose e anticonvenzionali. Un percorso di emozioni, ricordi, riflessioni, momenti d'ironia e leggerezza. Francesca Fialdini racconta la vita artistica e privata di personaggi celebri e non che hanno saputo imprimere un \"giro di ruota\" originale e positivo alla propria vita e a quella degli altri compiendo scelte coraggiose e anticonvenzionali. Un percorso di emozioni, ricordi, riflessioni, momenti d'ironia e leggerezza.</desc>
+    <credits>
+      <director>Elisabetta Pierelli</director>
+      <presenter>Francesca Fialdini</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Talk Show</category>
     <icon src="https://www.raiplay.it/dl/img/2026/10/05/1791187458114_1790256093558_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261012035000 +0200" stop="20261012043500 +0200" channel="Rai1.it">
     <title lang="it">Doc Martin</title>
@@ -3173,7 +3268,7 @@
     <desc lang="it">Adriana Pannitteri racconta storie dall'Italia e dal mondo, tra attualità, memoria e cultura. In apertura, Alessio Vassallo ripercorre la figura di Biagio Conte, mentre le fotografie di Francesco Zizola accendono i riflettori sul disagio psichico. Spazio poi alla crisi dell'ex Ilva, alla tragedia del bus di Mestre e alla testimonianza di una sopravvissuta agli ostaggi del 7 ottobre. Tra gli altri racconti, l'arte del restauro degli strumenti musicali, la storia di Arrigo Cipriani, la scuola e il mondo dei fumetti con Silvia Ziche. Adriana Pannitteri racconta storie dall'Italia e dal mondo, tra attualità, memoria e cultura. In apertura, Alessio Vassallo ripercorre la figura di Biagio Conte, mentre le fotografie di Francesco Zizola accendono i riflettori sul disagio psichico. Spazio poi alla crisi dell'ex Ilva, alla tragedia del bus di Mestre e alla testimonianza di una sopravvissuta agli ostaggi del 7 ottobre. Tra gli altri racconti, l'arte del restauro degli strumenti musicali, la storia di Arrigo Cipriani, la scuola e il mondo dei fumetti con Silvia Ziche.</desc>
     <date>2026</date>
     <category lang="it">Approfondimento</category>
-    <icon src="https://www.raiplay.it/dl/img/2025/10/21/1761056243708_tg2%20storie%202025.png" />
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735465027_1791735452649.png" />
     <country lang="it">Italia</country>
   </programme>
   <programme start="20261011004700 +0200" stop="20261011005500 +0200" channel="Rai2.it">
@@ -3261,7 +3356,7 @@
     <desc lang="it">Adriana Pannitteri racconta storie dall'Italia e dal mondo, tra attualità, memoria e cultura. In apertura, Alessio Vassallo ripercorre la figura di Biagio Conte, mentre le fotografie di Francesco Zizola accendono i riflettori sul disagio psichico. Spazio poi alla crisi dell'ex Ilva, alla tragedia del bus di Mestre e alla testimonianza di una sopravvissuta agli ostaggi del 7 ottobre. Tra gli altri racconti, l'arte del restauro degli strumenti musicali, la storia di Arrigo Cipriani, la scuola e il mondo dei fumetti con Silvia Ziche. Adriana Pannitteri racconta storie dall'Italia e dal mondo, tra attualità, memoria e cultura. In apertura, Alessio Vassallo ripercorre la figura di Biagio Conte, mentre le fotografie di Francesco Zizola accendono i riflettori sul disagio psichico. Spazio poi alla crisi dell'ex Ilva, alla tragedia del bus di Mestre e alla testimonianza di una sopravvissuta agli ostaggi del 7 ottobre. Tra gli altri racconti, l'arte del restauro degli strumenti musicali, la storia di Arrigo Cipriani, la scuola e il mondo dei fumetti con Silvia Ziche.</desc>
     <date>2026</date>
     <category lang="it">Approfondimento</category>
-    <icon src="https://www.raiplay.it/dl/img/2025/10/21/1761056243708_tg2%20storie%202025.png" />
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735465027_1791735452649.png" />
     <country lang="it">Italia</country>
   </programme>
   <programme start="20261011073500 +0200" stop="20261011074500 +0200" channel="Rai2.it">
@@ -3302,69 +3397,116 @@
   <programme start="20261011082500 +0200" stop="20261011094000 +0200" channel="Rai2.it">
     <title lang="it">Radio2 Social Club</title>
     <sub-title lang="it">Il meglio di Radio2 Social Club - 11/10/2026</sub-title>
-    <desc lang="it">Una selezione dei momenti più significativi della settimana di Radio2 Social Club.</desc>
-    <date>2019</date>
+    <desc lang="it">Una selezione dei momenti più significativi della settimana di Radio2 Social Club. Una selezione dei momenti più significativi della settimana di Radio2 Social Club.</desc>
+    <credits>
+      <director>Mauro Sebastianelli</director>
+      <director>Giuseppe Caporale</director>
+      <presenter>Luca Barbarossa</presenter>
+      <presenter>Ema Stokholma</presenter>
+    </credits>
+    <date>2025</date>
+    <category lang="it">Musica</category>
     <icon src="https://www.raiplay.it/dl/img/2024/09/25/1727249175034_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011094000 +0200" stop="20261011111000 +0200" channel="Rai2.it">
     <title lang="it">Un amore in fondo al mare</title>
-    <desc lang="it">Durante l'organizzazione del matrimonio di sua sorella Kate in un lussuosissimo resort alle Hawaii, Addie perde l'anello che sua nonna Helen le aveva regalato, simbolo dell'amore incondizionato dei nonni. Decide di assumere il marinaio e maestro di sub, Jack, per ritrovarlo. Tra i due inizialmente non c'è grande intesa, ma poco alla volta, cominciano a conoscersi meglio e capiscono di avere molto altro in comune.</desc>
-    <date>2019</date>
+    <desc lang="it">Durante l'organizzazione del matrimonio di sua sorella Kate in un lussuosissimo resort alle Hawaii, Addie perde l'anello che sua nonna Helen le aveva regalato, simbolo dell'amore incondizionato dei nonni. Decide di assumere il marinaio e maestro di sub, Jack, per ritrovarlo. Tra i due inizialmente non c'è grande intesa, ma poco alla volta, cominciano a conoscersi meglio e capiscono di avere molto altro in comune. Durante l'organizzazione del matrimonio di sua sorella Kate in un lussuosissimo resort alle Hawaii, Addie perde l'anello che sua nonna Helen le aveva regalato, simbolo dell'amore incondizionato dei nonni. Decide di assumere il marinaio e maestro di sub, Jack, per ritrovarlo. Tra i due inizialmente non c'è grande intesa, ma poco alla volta, cominciano a conoscersi meglio e capiscono di avere molto altro in comune.</desc>
+    <credits>
+      <director>Maclain Nelson</director>
+      <actor>Hunter King</actor>
+      <actor>Beau Mirchoff</actor>
+      <actor>Eliza Hayes Maher</actor>
+      <actor>Jordan Matlock</actor>
+      <actor>Diane Sargent</actor>
+      <actor>Brian Connors</actor>
+    </credits>
+    <date>2022</date>
+    <category lang="it">Sentimentale</category>
     <icon src="https://www.raiplay.it/dl/img/2023/06/09/1686318735994_2048x1152.jpg" />
+    <country lang="it">USA</country>
   </programme>
   <programme start="20261011111000 +0200" stop="20261011112000 +0200" channel="Rai2.it">
     <title lang="it">Tg Sport</title>
-    <desc lang="it">A cura di Rai Sport.</desc>
-    <date>2019</date>
+    <desc lang="it">A cura di Rai Sport. A cura di Rai Sport.</desc>
+    <credits>
+      <presenter>Vari</presenter>
+    </credits>
+    <category lang="it">Sport</category>
     <icon src="https://www.raiplay.it/dl/img/2025/12/16/1765898521589_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011112000 +0200" stop="20261011130000 +0200" channel="Rai2.it">
     <title lang="it">Un'estate a Oxford</title>
-    <desc lang="it">Nina accetta l'invito, da parte dell'università di Oxford, a tenere un seminario estivo. Appena arrivata, incontra il suo vecchio professore, Thomas Rothwell, con il quale, anni prima, aveva intrecciato una relazione mentre lavoravano alla stesura del libro "lettere a Hedy". Questo libro è una raccolta di lettere scritte in gioventù da Lord Addington e indirizzate al suo unico vero amore segreto, la domestica Hedy. Nina, durante il suo seminario, conosce un ragazzo di nome Daniel molto interessato alla storia di Hedy. Il ragazzo le confida che Hedy era sua nonna. Nina e Daniel decidono, allora, di recarsi in visita da Lord Addington per saperne di più.</desc>
-    <date>2019</date>
+    <desc lang="it">Nina accetta l'invito, da parte dell'università di Oxford, a tenere un seminario estivo. Appena arrivata, incontra il suo vecchio professore, Thomas Rothwell, con il quale, anni prima, aveva intrecciato una relazione mentre lavoravano alla stesura del libro "lettere a Hedy". Questo libro è una raccolta di lettere scritte in gioventù da Lord Addington e indirizzate al suo unico vero amore segreto, la domestica Hedy. Nina, durante il suo seminario, conosce un ragazzo di nome Daniel molto interessato alla storia di Hedy. Il ragazzo le confida che Hedy era sua nonna. Nina e Daniel decidono, allora, di recarsi in visita da Lord Addington per saperne di più. Nina accetta l'invito, da parte dell'università di Oxford, a tenere un seminario estivo. Appena arrivata, incontra il suo vecchio professore, Thomas Rothwell, con il quale, anni prima, aveva intrecciato una relazione mentre lavoravano alla stesura del libro \"lettere a Hedy\". Questo libro è una raccolta di lettere scritte in gioventù da Lord Addington e indirizzate al suo unico vero amore segreto, la domestica Hedy. Nina, durante il suo seminario, conosce un ragazzo di nome Daniel molto interessato alla storia di Hedy. Il ragazzo le confida che Hedy era sua nonna. Nina e Daniel decidono, allora, di recarsi in visita da Lord Addington per saperne di più.</desc>
+    <credits>
+      <director>Karola Meeder</director>
+      <actor>Mira Bartuschek</actor>
+      <actor>Dominic Raacke</actor>
+      <actor>Michael Raphael</actor>
+    </credits>
+    <date>2018</date>
+    <category lang="it">Sentimentale</category>
     <icon src="https://www.raiplay.it/dl/img/2020/08/21/1598022847013_2048x1152.jpg" />
+    <country lang="it">Germania</country>
   </programme>
   <programme start="20261011130000 +0200" stop="20261011133000 +0200" channel="Rai2.it">
     <title lang="it">Tg2</title>
-    <date>2019</date>
+    <date>2024</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2025/01/20/1737372806578_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011133000 +0200" stop="20261011135800 +0200" channel="Rai2.it">
     <title lang="it">TG2 Motori</title>
-    <desc lang="it">Direttore Antonio Preziosi A cura di Maria Leitner.</desc>
-    <date>2019</date>
+    <desc lang="it">Direttore Antonio Preziosi A cura di Maria Leitner. Direttore Antonio Preziosi A cura di Maria Leitner.</desc>
     <icon src="https://www.raiplay.it/dl/img/2021/03/21/1616313810740_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011135800 +0200" stop="20261011140000 +0200" channel="Rai2.it">
     <title lang="it">Meteo 2</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2025/11/20/1763645323036_RaiMeteo2048x1152.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011140000 +0200" stop="20261011145500 +0200" channel="Rai2.it">
     <title lang="it">Maserati - Il secolo del Tridente</title>
-    <desc lang="it">1^ Visione Rai - Un viaggio alle origini della casa automobilistica Maserati, fondata a Bologna nel 1914 come officina specializzata e che, nel 1926, ha prodotto la prima automobile con il proprio marchio, la Tipo 26.</desc>
-    <date>2019</date>
+    <desc lang="it">1^ Visione Rai - Un viaggio alle origini della casa automobilistica Maserati, fondata a Bologna nel 1914 come officina specializzata e che, nel 1926, ha prodotto la prima automobile con il proprio marchio, la Tipo 26. 1^ Visione Rai - Un viaggio alle origini della casa automobilistica Maserati, fondata a Bologna nel 1914 come officina specializzata e che, nel 1926, ha prodotto la prima automobile con il proprio marchio, la Tipo 26.</desc>
+    <date>2026</date>
+    <category lang="it">Uomini &amp; Società</category>
     <icon src="https://www.raiplay.it/dl/img/2026/10/09/1791541635811_2048x1152.jpg" />
+    <country lang="it">Italia</country>
     <episode-num system="onscreen">E1</episode-num>
   </programme>
-  <programme start="20261011145500 +0200" stop="20261011180500 +0200" channel="Rai2.it">
+  <programme start="20261011145500 +0200" stop="20261011161500 +0200" channel="Rai2.it">
     <title lang="it">Serie C</title>
     <sub-title lang="it">9a giornata: Casarano - Salernitana</sub-title>
-    <desc lang="it">Serie C - 9a giornata: Casarano - Salernitana.</desc>
-    <date>2019</date>
+    <desc lang="it">Serie C - 9a giornata: Casarano - Salernitana. Serie C - 9a giornata: Casarano - Salernitana.</desc>
+    <date>2024</date>
+    <category lang="it">Calcio</category>
     <icon src="https://www.raiplay.it/dl/img/2026/10/04/1791146908899_Nuovo%20progetto.jpg" />
+    <country lang="it">Italia</country>
+  </programme>
+  <programme start="20261011161500 +0200" stop="20261011180500 +0200" channel="Rai2.it">
+    <title lang="it">La Domenica Sportiva</title>
+    <sub-title lang="it">Puntata del 11/10/2026</sub-title>
+    <desc lang="it">Il racconto dell'attualità del calcio e degli altri sport attraverso immagini, dati, interviste e opinioni. In studio e in collegamento, i protagonisti raccontano i loro successi sportivi e personali.</desc>
+    <date>2019</date>
+    <icon src="https://www.raiplay.it/dl/img/2026/08/21/1787316377807_domenica%20sportiva%202026%20-%202048x1152.jpg" />
   </programme>
   <programme start="20261011180500 +0200" stop="20261011185500 +0200" channel="Rai2.it">
     <title lang="it">TG2 Dossier</title>
     <sub-title lang="it">C'era una volta un burattino - 10/10/2026</sub-title>
-    <desc lang="it">A 200 anni dalla nascita di Collodi, il viaggio senza fine di Pinocchio tra letteratura, cinema e immaginario collettivo. L'inviata Cinzia Terlizzi porta i telespettatori nel mondo di uno degli autori italiani più conosciuti: Carlo Lorenzini, in arte Collodi, giornalista, scrittore e osservatore ironico della società del suo tempo. Il racconto della sua vita e della sua opera più celebre: Pinocchio, il burattino diventato un'icona universale della letteratura, del cinema e della cultura popolare, che è molto più di una favola. Un classico senza tempo, un patrimonio culturale italiano che il mondo continua a reinterpretare e che, attraverso il cinema, non smette di rinnovare la propria magia.</desc>
-    <date>2019</date>
+    <desc lang="it">A 200 anni dalla nascita di Collodi, il viaggio senza fine di Pinocchio tra letteratura, cinema e immaginario collettivo. L'inviata Cinzia Terlizzi porta i telespettatori nel mondo di uno degli autori italiani più conosciuti: Carlo Lorenzini, in arte Collodi, giornalista, scrittore e osservatore ironico della società del suo tempo. Il racconto della sua vita e della sua opera più celebre: Pinocchio, il burattino diventato un'icona universale della letteratura, del cinema e della cultura popolare, che è molto più di una favola. Un classico senza tempo, un patrimonio culturale italiano che il mondo continua a reinterpretare e che, attraverso il cinema, non smette di rinnovare la propria magia. A 200 anni dalla nascita di Collodi, il viaggio senza fine di Pinocchio tra letteratura, cinema e immaginario collettivo. L'inviata Cinzia Terlizzi porta i telespettatori nel mondo di uno degli autori italiani più conosciuti: Carlo Lorenzini, in arte Collodi, giornalista, scrittore e osservatore ironico della società del suo tempo. Il racconto della sua vita e della sua opera più celebre: Pinocchio, il burattino diventato un'icona universale della letteratura, del cinema e della cultura popolare, che è molto più di una favola. Un classico senza tempo, un patrimonio culturale italiano che il mondo continua a reinterpretare e che, attraverso il cinema, non smette di rinnovare la propria magia.</desc>
+    <date>2026</date>
     <icon src="https://www.raiplay.it/dl/img/2026/10/08/1791489599297_Thumb-EP.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011185500 +0200" stop="20261011190000 +0200" channel="Rai2.it">
     <title lang="it">TG2 LIS</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2021/03/21/1616314226970_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011190000 +0200" stop="20261011194500 +0200" channel="Rai2.it">
     <title lang="it">Blue Bloods</title>
@@ -4314,57 +4456,82 @@
   <programme start="20261011080000 +0200" stop="20261011101500 +0200" channel="Rai3.it">
     <title lang="it">Mi manda Rai Tre</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">La grazia parziale – cioè una riduzione della pena da scontare – che il presidente della Repubblica ha concesso a Guido Gianni, gioielliere condannato per aver ucciso due rapinatori nel 2008, riaccende il dibattito sulla legittima difesa. A seguire, il pane è un alimento che non manca mai sulle tavole italiane, ma si sa davvero quello che si compra? Non è sempre facile orientarsi fra diciture ed etichette, da artigianale a precotto, da fresco a congelato e comprendere qual è il prodotto migliore da scegliere. Coi Carabinieri dei Nas indagini per verificare la conservazione e le etichette regolari di alcuni prodotti da forno. In diretta anche il caso, esploso la scorsa estate, delle maglie dei Vigili del fuoco che si sciolgono in acqua: cosa è accaduto realmente? Tra gli ospiti di Federico Ruffo: Massimo Lugli, giornalista e scrittore; Francesco Borgonovo, vicedirettore La Verità; Antonio Di Pietro, ex magistrato; Fulvio Marino, panettiere; Daniele Paci, agronomo; Gaetano Marconato, panificatore Cna; Rodolfo Molettieri, panificatore Confesercenti.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2025/08/19/1755616587306_MI%20manda%20Raitre.jpg" />
+    <desc lang="it">La grazia parziale – cioè una riduzione della pena da scontare – che il presidente della Repubblica ha concesso a Guido Gianni, gioielliere condannato per aver ucciso due rapinatori nel 2008, riaccende il dibattito sulla legittima difesa. A seguire, il pane è un alimento che non manca mai sulle tavole italiane, ma si sa davvero quello che si compra? Non è sempre facile orientarsi fra diciture ed etichette, da artigianale a precotto, da fresco a congelato e comprendere qual è il prodotto migliore da scegliere. Coi Carabinieri dei Nas indagini per verificare la conservazione e le etichette regolari di alcuni prodotti da forno. In diretta anche il caso, esploso la scorsa estate, delle maglie dei Vigili del fuoco che si sciolgono in acqua: cosa è accaduto realmente? Tra gli ospiti di Federico Ruffo: Massimo Lugli, giornalista e scrittore; Francesco Borgonovo, vicedirettore La Verità; Antonio Di Pietro, ex magistrato; Fulvio Marino, panettiere; Daniele Paci, agronomo; Gaetano Marconato, panificatore Cna; Rodolfo Molettieri, panificatore Confesercenti. La grazia parziale – cioè una riduzione della pena da scontare – che il presidente della Repubblica ha concesso a Guido Gianni, gioielliere condannato per aver ucciso due rapinatori nel 2008, riaccende il dibattito sulla legittima difesa. A seguire, il pane è un alimento che non manca mai sulle tavole italiane, ma si sa davvero quello che si compra? Non è sempre facile orientarsi fra diciture ed etichette, da artigianale a precotto, da fresco a congelato e comprendere qual è il prodotto migliore da scegliere. Coi Carabinieri dei Nas indagini per verificare la conservazione e le etichette regolari di alcuni prodotti da forno. In diretta anche il caso, esploso la scorsa estate, delle maglie dei Vigili del fuoco che si sciolgono in acqua: cosa è accaduto realmente? Tra gli ospiti di Federico Ruffo: Massimo Lugli, giornalista e scrittore; Francesco Borgonovo, vicedirettore La Verità; Antonio Di Pietro, ex magistrato; Fulvio Marino, panettiere; Daniele Paci, agronomo; Gaetano Marconato, panificatore Cna; Rodolfo Molettieri, panificatore Confesercenti.</desc>
+    <credits>
+      <director>Fabio Calabrò</director>
+      <presenter>Federico Ruffo</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Talk Show</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735409646_1791735385634.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011101500 +0200" stop="20261011110500 +0200" channel="Rai3.it">
     <title lang="it">O anche no</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Paola Severini Melograni conduce il talk di infotainment dedicato all'inclusione e alla solidarietà che racconta attraverso i protagonisti le loro storie, attese, difficoltà e conquiste.</desc>
-    <date>2019</date>
+    <desc lang="it">Paola Severini Melograni conduce il talk di infotainment dedicato all'inclusione e alla solidarietà che racconta attraverso i protagonisti le loro storie, attese, difficoltà e conquiste. Paola Severini Melograni conduce il talk di infotainment dedicato all'inclusione e alla solidarietà che racconta attraverso i protagonisti le loro storie, attese, difficoltà e conquiste.</desc>
+    <credits>
+      <director>Gabriele Mammarella</director>
+      <presenter>Paola Severini Melograni</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2026/10/09/1791558654537_7495.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011110500 +0200" stop="20261011113000 +0200" channel="Rai3.it">
     <title lang="it">TGR Estovest</title>
-    <desc lang="it">Direttore Roberto Pacchetti. Vicedirettrice Ines Maggiolini. A cura della TGR Friuli-Venezia Giulia e Puglia.</desc>
-    <date>2019</date>
+    <desc lang="it">Direttore Roberto Pacchetti. Vicedirettrice Ines Maggiolini. A cura della TGR Friuli-Venezia Giulia e Puglia. Direttore Roberto Pacchetti. Vicedirettrice Ines Maggiolini. A cura della TGR Friuli-Venezia Giulia e Puglia.</desc>
+    <date>2026</date>
     <icon src="https://www.raiplay.it/dl/img/2025/10/10/1760118059999_TGREstOvest2048x1152.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011113000 +0200" stop="20261011120000 +0200" channel="Rai3.it">
     <title lang="it">TGR Mediterraneo</title>
-    <desc lang="it">Direttore Roberto Pacchetti. Vicedirettore Roberto Gueli. A cura della TGR Sicilia.</desc>
-    <date>2019</date>
+    <desc lang="it">Direttore Roberto Pacchetti. Vicedirettore Roberto Gueli. A cura della TGR Sicilia. Direttore Roberto Pacchetti. Vicedirettore Roberto Gueli. A cura della TGR Sicilia.</desc>
+    <date>2026</date>
     <icon src="https://www.raiplay.it/dl/img/2025/09/15/1757942929150_TGRMediterraneo2048x1152.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011120000 +0200" stop="20261011121700 +0200" channel="Rai3.it">
     <title lang="it">Tg3</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2026/09/24/1790256622733_TG3_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011121700 +0200" stop="20261011122500 +0200" channel="Rai3.it">
     <title lang="it">Tg3 Fuorilinea</title>
-    <desc lang="it">A cura di Giovanni Battista Tomassini.</desc>
-    <date>2019</date>
+    <desc lang="it">A cura di Giovanni Battista Tomassini. A cura di Giovanni Battista Tomassini.</desc>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2026/10/08/1791475669006_TG3Fuorilinea_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011122500 +0200" stop="20261011125500 +0200" channel="Rai3.it">
     <title lang="it">TGR Alta Quota</title>
-    <desc lang="it">Direttore Roberto Pacchetti. Vicedirettrice Roberta Serdoz. A cura della TGR Lazio, Piemonte, Trentino-Alto Adige e Valle d'Aosta.</desc>
-    <date>2019</date>
+    <desc lang="it">Direttore Roberto Pacchetti. Vicedirettrice Roberta Serdoz. A cura della TGR Lazio, Piemonte, Trentino-Alto Adige e Valle d'Aosta. Direttore Roberto Pacchetti. Vicedirettrice Roberta Serdoz. A cura della TGR Lazio, Piemonte, Trentino-Alto Adige e Valle d'Aosta.</desc>
+    <date>2026</date>
     <icon src="https://www.raiplay.it/dl/img/2025/10/15/1760538349666_TGRAltaQuota2048x1152.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011125500 +0200" stop="20261011130000 +0200" channel="Rai3.it">
     <title lang="it">TG3 LIS</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2026/09/30/1790783451323_TG3LIS_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011130000 +0200" stop="20261011140000 +0200" channel="Rai3.it">
     <title lang="it">Il cacciatore di sogni</title>
     <sub-title lang="it">Luna Blu - 11/10/2026</sub-title>
-    <desc lang="it">Stefano Buttafuoco racconta la realtà di "Luna Blu", una struttura che promuove l'inclusione delle persone con disabilità attraverso accoglienza, formazione professionale, lavoro e autonomia. Ospite in studio Ainett Stephens, che condivide la propria esperienza di madre di un figlio nello spettro autistico e il suo ruolo di caregiver.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2026/10/02/1790973986495_cacciatore%20dei%20sogni%202048x1152.jpg" />
+    <desc lang="it">Stefano Buttafuoco racconta la realtà di "Luna Blu", una struttura che promuove l'inclusione delle persone con disabilità attraverso accoglienza, formazione professionale, lavoro e autonomia. Ospite in studio Ainett Stephens, che condivide la propria esperienza di madre di un figlio nello spettro autistico e il suo ruolo di caregiver. Stefano Buttafuoco racconta la realtà di \"Luna Blu\.</desc>
+    <credits>
+      <director>Francesco Ambrosino</director>
+      <director>Fabrizio Cofrancesco</director>
+      <presenter>Stefano Buttafuoco</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Approfondimento</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735370534_1791735289479.png" />
+    <country lang="it">Italia</country>
     <episode-num system="onscreen">S5</episode-num>
   </programme>
   <programme start="20261011140000 +0200" stop="20261011141000 +0200" channel="Rai3.it">
@@ -4379,27 +4546,41 @@
   </programme>
   <programme start="20261011141500 +0200" stop="20261011143000 +0200" channel="Rai3.it">
     <title lang="it">Tg3</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2026/09/24/1790256622733_TG3_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011143000 +0200" stop="20261011164500 +0200" channel="Rai3.it">
     <title lang="it">In mezz'ora</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Monica Maggioni analizza i temi chiave della settimana a livello nazionale ed internazionale attraverso le voci dei protagonisti e degli esperti e il supporto di reportage che raccontano il mondo in cui viviamo.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2023/09/28/1695892524888_2048x1152.jpg" />
+    <desc lang="it">Monica Maggioni analizza i temi chiave della settimana a livello nazionale ed internazionale attraverso le voci dei protagonisti e degli esperti e il supporto di reportage che raccontano il mondo in cui viviamo. Monica Maggioni analizza i temi chiave della settimana a livello nazionale ed internazionale attraverso le voci dei protagonisti e degli esperti e il supporto di reportage che raccontano il mondo in cui viviamo.</desc>
+    <credits>
+      <director>Alessandro Capitani</director>
+      <presenter>Monica Maggioni</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Approfondimento</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735389159_1791735278548.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011164500 +0200" stop="20261011190000 +0200" channel="Rai3.it">
     <title lang="it">Kilimangiaro</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Camila Raznovich ci porta nei luoghi più belli e spesso sconosciuti del pianeta attraverso tanti documentari e gli esperti in studio, per un giro del mondo tra avventure, storia e meraviglie della natura.</desc>
-    <date>2019</date>
-    <icon src="https://www.raiplay.it/dl/img/2025/10/20/1760961247792_2048x1152.jpg" />
+    <desc lang="it">Camila Raznovich ci porta nei luoghi più belli e spesso sconosciuti del pianeta attraverso tanti documentari e gli esperti in studio, per un giro del mondo tra avventure, storia e meraviglie della natura. Camila Raznovich ci porta nei luoghi più belli e spesso sconosciuti del pianeta attraverso tanti documentari e gli esperti in studio, per un giro del mondo tra avventure, storia e meraviglie della natura.</desc>
+    <credits>
+      <director>Laura Ferraresi</director>
+      <presenter>Camila Raznovich</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Viaggi &amp; Avventure</category>
+    <icon src="https://www.raiplay.it/dl/img/2026/10/11/1791735395701_1791735257572.png" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011190000 +0200" stop="20261011193000 +0200" channel="Rai3.it">
     <title lang="it">Tg3</title>
-    <date>2019</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2026/09/24/1790256622733_TG3_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261011193000 +0200" stop="20261011195100 +0200" channel="Rai3.it">
     <title lang="it">Tg Regione</title>
@@ -4447,9 +4628,15 @@
   <programme start="20261012003500 +0200" stop="20261012024000 +0200" channel="Rai3.it">
     <title lang="it">In mezz'ora</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Monica Maggioni analizza i temi chiave della settimana a livello nazionale ed internazionale attraverso le voci dei protagonisti e degli esperti e il supporto di reportage che raccontano il mondo in cui viviamo.</desc>
-    <date>2019</date>
+    <desc lang="it">Monica Maggioni analizza i temi chiave della settimana a livello nazionale ed internazionale attraverso le voci dei protagonisti e degli esperti e il supporto di reportage che raccontano il mondo in cui viviamo. Monica Maggioni analizza i temi chiave della settimana a livello nazionale ed internazionale attraverso le voci dei protagonisti e degli esperti e il supporto di reportage che raccontano il mondo in cui viviamo.</desc>
+    <credits>
+      <director>Alessandro Capitani</director>
+      <presenter>Monica Maggioni</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2023/09/28/1695892524888_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261012024000 +0200" stop="20261012024500 +0200" channel="Rai3.it">
     <title lang="it">Fuori orario. Cose (mai) viste</title>
@@ -4706,9 +4893,15 @@
   <programme start="20261013011500 +0200" stop="20261013020000 +0200" channel="Rai3.it">
     <title lang="it">O anche no</title>
     <sub-title lang="it">Puntata del 11/10/2026</sub-title>
-    <desc lang="it">Paola Severini Melograni conduce il talk di infotainment dedicato all'inclusione e alla solidarietà che racconta attraverso i protagonisti le loro storie, attese, difficoltà e conquiste.</desc>
-    <date>2019</date>
+    <desc lang="it">Paola Severini Melograni conduce il talk di infotainment dedicato all'inclusione e alla solidarietà che racconta attraverso i protagonisti le loro storie, attese, difficoltà e conquiste. Paola Severini Melograni conduce il talk di infotainment dedicato all'inclusione e alla solidarietà che racconta attraverso i protagonisti le loro storie, attese, difficoltà e conquiste.</desc>
+    <credits>
+      <director>Gabriele Mammarella</director>
+      <presenter>Paola Severini Melograni</presenter>
+    </credits>
+    <date>2026</date>
+    <category lang="it">Approfondimento</category>
     <icon src="https://www.raiplay.it/dl/img/2023/09/05/1693905098556_2048x1152.jpg" />
+    <country lang="it">Italia</country>
   </programme>
   <programme start="20261013020000 +0200" stop="20261013023000 +0200" channel="Rai3.it">
     <title lang="it">Sorgente di vita</title>
